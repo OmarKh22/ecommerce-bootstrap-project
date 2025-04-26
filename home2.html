@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeeSpace - Online Store</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar bg-light py-2">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="location">
+          <a href="#" class="text-secondary text-decoration-none">
+            <i class="fas fa-map-marker-alt me-2"></i>Find a Store
+          </a>
+        </div>
+        <div class="social-icons">
+          <a href="#" class="text-secondary ms-3"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="#" class="text-secondary ms-3"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="text-secondary ms-3"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="text-secondary ms-3"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header py-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Logo -->
+          <div class="col-md-3 col-6">
+            <a href="#" class="logo d-flex align-items-center">
+              <!-- <span class="text-success me-1"
+                ><i class="fas fa-tshirt"></i
+              ></span>
+              <span class="brand-name fs-4 fw-bold">TeeSpace</span> -->
+              <img src="images/logo.png" alt="TeeSpace Logo" />
+            </a>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="col-md-5 col-12 order-md-2 order-3 mt-md-0 mt-3">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="What are you looking for?"
+              />
+              <button class="btn btn-dark" type="button">Search</button>
+            </div>
+          </div>
+
+          <!-- Contact and Cart -->
+          <div
+            class="col-md-4 col-6 order-md-3 order-2 d-flex justify-content-end align-items-center"
+          >
+            <div class="d-none d-md-flex align-items-center me-4 gap-3">
+              <i class="fa-solid fa-phone-volume phone-icon"></i>
+              <div>
+                <div class="fw-bold">Hotline: 19008188</div>
+                <div class="small text-muted">Pickup your order for free</div>
+              </div>
+            </div>
+            <div class="d-flex icons">
+              <a href="#" class="position-relative me-3">
+                <i class="fa-regular fa-user"></i>
+              </a>
+              <a href="#" class="position-relative me-3">
+                <i class="fas fa-star fs-5"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success"
+                >
+                  1
+                </span>
+              </a>
+              <a href="#" class="position-relative">
+                <i class="fas fa-shopping-cart fs-5"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success"
+                >
+                  3
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand d-lg-none" href="#">Menu</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" style="color: #2ebb77" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="teespaceDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                TeeSpace
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="teespaceDropdown">
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Our Story</a></li>
+                <li><a class="dropdown-item" href="#">Team</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="shopDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Shop
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                <li><a class="dropdown-item" href="#">All Products</a></li>
+                <li><a class="dropdown-item" href="#">Men's Collection</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Women's Collection</a>
+                </li>
+                <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="blogDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Blog
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                <li><a class="dropdown-item" href="#">Latest News</a></li>
+                <li><a class="dropdown-item" href="#">Fashion Tips</a></li>
+                <li><a class="dropdown-item" href="#">Trends</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="pagesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                <li><a class="dropdown-item" href="#">Size Guide</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Shipping & Returns</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="sale-badge d-none d-lg-block">
+          <span class="">
+            <i class="fas fa-fire-alt me-1" style="color: #f4900c"></i>
+            Extra <span style="color: #2ebb77">Sale 30%</span> off!
+          </span>
+        </div>
+        <div class="sale-badge d-lg-none">
+          <!-- <span class="">
+            <i class="fas fa-fire-alt me-1"></i>
+            30% off!
+          </span> -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center text-center g-5">
+          <div class="col-lg-6 mb-lg-0">
+            <h1 class="hero-title mb-5">
+              Let's configure your own<br />
+              print product
+            </h1>
+            <p class="hero-text mb-4 pt-5">
+              The easiest way to get your print as you want
+            </p>
+            <a href="#" class="btn btn-custom">Print Your Own</a>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-grid">
+              <div class="row">
+                <div class="col-6">
+                  <div class="product-img-wrapper mb-3">
+                    <div class="placeholder-img yellow-tshirt">
+                      <img
+                        src="images/hero1.png"
+                        alt="Yellow T-shirt"
+                        style="width: 172px; height: 172px"
+                      />
+                    </div>
+                  </div>
+                  <div class="product-img-wrapper">
+                    <div class="placeholder-img palette">
+                      <img
+                        src="images/hero3.png"
+                        alt="Palette"
+                        style="width: 150px; height: 172px"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="product-img-wrapper mb-2">
+                    <div class="placeholder-img white-tshirt">
+                      <img
+                        src="images/hero2.png"
+                        alt="Green Hoodie"
+                        style="width: 197px; height: 197px"
+                      />
+                    </div>
+                  </div>
+                  <div class="product-img-wrapper">
+                    <div class="placeholder-img green-hoodie">
+                      <img
+                        src="images/hero4.png"
+                        alt="Green Hoodie"
+                        style="width: 198px; height: 198px"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shopping by Categories Section -->
+    <section class="categories-section py-5">
+      <div class="container">
+        <h2 class="section-title mb-5">Shopping by Categories</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="row categories-wrapper">
+              <div class="col category-item">
+                <a href="#" class="category-link">
+                  <div class="category-img-wrapper">
+                    <div class="placeholder-img purple-tshirt">
+                      <img
+                        src="./images/catetory1.png"
+                        alt="categories"
+                        srcset=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="mt-3">T-shirt<sup>15</sup></h5>
+                </a>
+              </div>
+
+              <div class="col category-item">
+                <a href="#" class="category-link">
+                  <div class="category-img-wrapper">
+                    <div class="placeholder-img green-tshirt">
+                      <img
+                        src="./images/catetory2.png"
+                        alt="categories"
+                        srcset=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="mt-3">Long-sleeves<sup>8</sup></h5>
+                </a>
+              </div>
+
+              <div class="col category-item">
+                <a href="#" class="category-link">
+                  <div class="category-img-wrapper">
+                    <div class="placeholder-img peach-sweater">
+                      <img
+                        src="./images/catetory3.png"
+                        alt="categories"
+                        srcset=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="mt-3">Sweater<sup>18</sup></h5>
+                </a>
+              </div>
+
+              <div class="col category-item">
+                <a href="#" class="category-link">
+                  <div class="category-img-wrapper">
+                    <div class="placeholder-img purple-hoodie">
+                      <img
+                        src="./images/catetory4.png"
+                        alt="categories"
+                        srcset=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="mt-3">Hoodies<sup>9</sup></h5>
+                </a>
+              </div>
+
+              <div class="col category-item">
+                <a href="#" class="category-link">
+                  <div class="category-img-wrapper">
+                    <div class="placeholder-img tanktop">
+                      <img
+                        src="./images/catetory5.png"
+                        alt="categories"
+                        srcset=""
+                      />
+                    </div>
+                  </div>
+                  <h5 class="mt-3">Tanktop<sup>6</sup></h5>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <!-- <div class="category-navigation d-none d-lg-block">
+          <button class="cat-nav-btn prev-btn" aria-label="Previous categories">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="cat-nav-btn next-btn" aria-label="Next categories">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Promotional Cards Section -->
+    <section class="promo-section py-5">
+       <div class="container promo-section">
+        <div class="row">
+            <!-- Left Card: Thousands of free templates -->
+            <div class="col-md-6 mb-4">
+                <div class="promo-card">
+                    <img src="./images/banner1.png" alt="Left Banner">
+                    <div class="promo-content">
+                        <h3 class="promo-title">
+                            Thousands of<br>free templates
+                        </h3>
+                        <p class="promo-text">
+                            Free and easy way to bring<br>your ideas to life
+                        </p>
+                        <a href="#" class="btn btn-success">
+                            Explore More <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Card: Create your unique style -->
+            <div class="col-md-6 mb-4">
+                <div class="promo-card right-card">
+                    <img src="./images/banner2.png" alt="Right Banner">
+                    <div class="promo-content right">
+                        <h3 class="promo-title">
+                            Create your<br>unique style
+                        </h3>
+                        <p class="promo-text">
+                            Free and easy way to create<br>your ideas to life
+                        </p>
+                        <a href="#" class="btn btn-success">
+                            Shop Now <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+    <!-- Products Section -->
+    <section class="products-section py-5">
+      <div class="container">
+        <!-- Product Tabs -->
+        <div class="product-tabs mb-4">
+          <ul class="nav nav-tabs border-0">
+            <li class="nav-item">
+              <a class="nav-link active px-0 me-4" href="#">New Arrivals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-0 me-4 " href="#">Best Seller</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-0 " href="#">Sale</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="row g-4">
+          <!-- Product 1 -->
+          <div class="col-md-3 col-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="./images/newarrival1.png" alt="newarrival1">
+              </div>
+              <div class="product-info mt-3 text-center">
+                <h3 class="product-title"><a href="#">Zone Sweatshirt</a></h3>
+                <div class="product-price">
+                  <span class="price">$19.95 - $159.95</span>
+                  <!-- <span class="price"></span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="col-md-3 col-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="./images/newarrival2.png" alt="newarrival2">
+              </div>
+              <div class="product-info mt-3 text-center">
+                <h3 class="product-title"><a href="#">Zoo Men's t-shirt</a></h3>
+                <div class="product-price">
+                  <span class="price">$14.95 - $119.95</span>
+                  <!-- <span class="price"></span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="col-md-3 col-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="./images/newarrival3.png" alt="newarrival3"> 
+                <div class="product-tag hot-tag">HOT</div>
+              </div>
+              <div class="product-info mt-3 text-center">
+                <h3 class="product-title"><a href="#">Toddler T-shirt</a></h3>
+                <div class="product-price">
+                  <span class="price">$26.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="col-md-3 col-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="./images/newarrival4.png" alt="newarrival4">
+                <div class="product-tag persentage">-10%</div>
+                <div class="product-tag hot-tag">HOT</div>
+              </div>
+              <div class="product-info mt-3 text-center">
+                <h3 class="product-title"><a href="#">Fine Jersey Tee</a></h3>
+                <div class="product-price">
+                  <span class="price text-success">$28.00</span>
+                  <span class="old-price ms-2 text-muted"
+                    ><del>$31.00</del></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <!-- <div class="product-navigation mt-5">
+          <div class="d-flex justify-content-center">
+            <button class="btn nav-btn me-2">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="btn nav-btn active">1</button>
+            <button class="btn nav-btn">2</button>
+            <button class="btn nav-btn">3</button>
+            <button class="btn nav-btn ms-2">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+
+
+    <!-- Hot Under $39 Section -->
+    <!-- <section class="hot-products-section py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="section-title mb-0">Hot under $39</h2>
+          <a href="#" class="view-all-link"
+            >View All <i class="fas fa-arrow-right ms-2"></i
+          ></a>
+        </div>
+
+        <div class="row g-4">
+      
+          <div class="col-md-3 col-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="./images/newarrival5.png" alt="newarrival1">
+                <div class="product-tag sale-tag-green">Sale!</div>
+                <div class="product-tag new-tag">New</div>
+                <div class="product-actions">
+                  <button class="btn action-btn">
+                    <i class="far fa-heart"></i>
+                  </button>
+                  <button class="btn action-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                  <button class="btn action-btn">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info text-center mt-3">
+                <h3 class="product-title">
+                  <a href="#">Adult Quantity Tee</a>
+                </h3>
+                <div class="product-price">
+                  <span class="price">$26.00</span>
+                  <span class="price-range">- $29.00</span>
+                </div>
+                <div class="product-colors mt-2">
+                  <span class="color-option bg-dark"></span>
+                  <span class="color-option" style="background-color: #D7A983;"></span>
+                  <span class="color-option-count">+3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-3 col-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="./images/newarrival6.png" alt="newarrival6" >
+                <div class="product-tag sale-tag-green">Sale!</div>
+                <div class="product-tag new-tag">New</div>
+                <div class="product-actions">
+                  <button class="btn action-btn">
+                    <i class="far fa-heart"></i>
+                  </button>
+                  <button class="btn action-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                  <button class="btn action-btn">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info text-center mt-3">
+                <h3 class="product-title">
+                  <a href="#">All-Over-Print Hoodie</a>
+                </h3>
+                <div class="product-price">
+                  <span class="price">$26.00</span>
+                  <span class="price-range">- $29.00</span>
+                </div>
+                <div class="product-colors mt-2">
+                  <span class="color-option bg-black"></span>
+                  <span class="color-option" style="background-color: #D7A983;"></span>
+                  <span class="color-option-count">+3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="./images/newarrival7.png" alt="newarrival7">
+             
+                <div class="product-tag sale-tag-green">Sale!</div>
+                <div class="product-tag new-tag">New</div>
+                <div class="product-actions">
+                  <button class="btn action-btn">
+                    <i class="far fa-heart"></i>
+                  </button>
+                  <button class="btn action-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                  <button class="btn action-btn">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info text-center mt-3">
+                <h3 class="product-title"><a href="#">AOP Cut & Sew Tee</a></h3>
+                <div class="product-price">
+                  <span class="price">$26.00</span>
+                  <span class="price-range">- $29.00</span>
+                </div>
+                <div class="product-colors mt-2">
+                  <span class="color-option bg-dark"></span>
+                  <span class="color-option" style="background-color: #D7A983;"></span>
+                  <span class="color-option-count">+3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+          <div class="col-md-3 col-6">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="./images/newarrival4.png" alt="newarrival4">
+                <div class="product-tag sale-tag">-10%</div>
+                <div class="product-tag hot-tag">HOT</div>
+                <div class="product-actions">
+                  <button class="btn action-btn">
+                    <i class="far fa-heart"></i>
+                  </button>
+                  <button class="btn action-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                  <button class="btn action-btn">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info text-center mt-3">
+                <h3 class="product-title"><a href="#">Fine Jersey Tee</a></h3>
+                <div class="product-price">
+                  <span class="price text-success">$28.00</span>
+                  <span class="old-price ms-2 text-muted"
+                    ><del>$31.00</del></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    
+        <div class="product-navigation d-flex justify-content-center mt-4">
+          <button class="btn carousel-nav-btn prev-btn me-2">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="btn carousel-nav-btn next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section> -->
+
+
+
+
+    <section class="hot-products-section py-5">
+      
+      <div class="container position-relative">
+    <!-- Section Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="section-title mb-0">Hot under $39</h2>
+      <a href="#" class="view-all-link"
+        >View All <i class="fas fa-arrow-right ms-2"></i
+      ></a>
+    </div>
+
+    <!-- Product Carousel Container -->
+    <div class="position-relative">
+      <!-- Navigation Buttons -->
+      <button class="btn carousel-nav-btn prev-btn position-absolute start-0 top-50 translate-middle-y">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      
+      <button class="btn carousel-nav-btn next-btn position-absolute end-0 top-50 translate-middle-y">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <!-- Product Grid -->
+      <div class="row g-4 mx-auto" style="width: calc(100% - 80px);">
+        <!-- Product 1 -->
+        <div class="col-md-3 col-6">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./images/newarrival5.png" alt="newarrival1">
+              <div class="product-tag sale-tag-green">Sale!</div>
+              <div class="product-tag new-tag">New</div>
+              <div class="product-actions">
+                <button class="btn action-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="btn action-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                <button class="btn action-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info text-center mt-3">
+              <h3 class="product-title">
+                <a href="#">Adult Quantity Tee</a>
+              </h3>
+              <div class="product-price">
+                <span class="price">$26.00</span>
+                <span class="price-range">- $29.00</span>
+              </div>
+              <div class="product-colors mt-2">
+                <span class="color-option bg-dark"></span>
+                <span class="color-option" style="background-color: #D7A983;"></span>
+                <span class="color-option-count">+3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-3 col-6">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./images/newarrival6.png" alt="newarrival6">
+              <div class="product-tag sale-tag-green">Sale!</div>
+              <div class="product-tag new-tag">New</div>
+              <div class="product-actions">
+                <button class="btn action-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="btn action-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                <button class="btn action-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info text-center mt-3">
+              <h3 class="product-title">
+                <a href="#">All-Over-Print Hoodie</a>
+              </h3>
+              <div class="product-price">
+                <span class="price">$26.00</span>
+                <span class="price-range">- $29.00</span>
+              </div>
+              <div class="product-colors mt-2">
+                <span class="color-option bg-black"></span>
+                <span class="color-option" style="background-color: #D7A983;"></span>
+                <span class="color-option-count">+3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-3 col-6">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./images/newarrival7.png" alt="newarrival7">
+              <div class="product-tag sale-tag-green">Sale!</div>
+              <div class="product-tag new-tag">New</div>
+              <div class="product-actions">
+                <button class="btn action-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="btn action-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                <button class="btn action-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info text-center mt-3">
+              <h3 class="product-title"><a href="#">AOP Cut & Sew Tee</a></h3>
+              <div class="product-price">
+                <span class="price">$26.00</span>
+                <span class="price-range">- $29.00</span>
+              </div>
+              <div class="product-colors mt-2">
+                <span class="color-option bg-dark"></span>
+                <span class="color-option" style="background-color: #D7A983;"></span>
+                <span class="color-option-count">+3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-md-3 col-6">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./images/newarrival4.png" alt="newarrival4">
+              <div class="product-tag sale-tag">-10%</div>
+              <div class="product-tag hot-tag">HOT</div>
+              <div class="product-actions">
+                <button class="btn action-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="btn action-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                <button class="btn action-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info text-center mt-3">
+              <h3 class="product-title"><a href="#">Fine Jersey Tee</a></h3>
+              <div class="product-price">
+                <span class="price text-success">$28.00</span>
+                <span class="old-price ms-2 text-muted"
+                  ><del>$31.00</del></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- How to Design Section -->
+    <section class="how-to-section py-5">
+      <div class="container">
+        <div class="how-to-wrapper">
+          <div class="row align-items-center " >
+            <h2 class="section-title text-center">
+              How to design and order custom T-shirts
+            </h2>
+            <div class="col-lg-5 col-md-6">
+
+              <div class="steps-container ">
+                <div class="step-item d-flex mb-4">
+                  <div class="step-number">1</div>
+                  <div class="step-content">
+                    <h4 class="step-title">
+                      Choose from 412 custom products in our catalog
+                    </h4>
+                  </div>
+                </div>
+
+                <div class="step-item d-flex mb-4">
+                  <div class="step-number" style="background-color: white; color: #2ebb77;">2</div>
+                  <div class="step-content">
+                    <h4 class="step-title">
+                      Customize your design with graphics, text or your own
+                      uploaded images.
+                    </h4>
+                  </div>
+                </div>
+
+                <div class="step-item d-flex">
+                  <div class="step-number" style="background-color: white; color: #2ebb77;">3</div>
+                  <div class="step-content">
+                    <h4 class="step-title">
+                      Get your order sent to your door with free standard
+                      shipping.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7 col-md-6 mt-5 mt-md-0">
+              <img src="./images/howtodesign.png" alt="howtodesign" srcset="">
+              <!-- <div class="design-mockup-container position-relative">
+                <div class="design-mockup-laptop">
+                  <div class="laptop-screen">
+                    <div class="mockup-content d-flex">
+                      <div class="product-preview">
+                        <div class="placeholder-img product-preview-img"></div>
+                      </div>
+                      <div class="product-options ms-3">
+                        <div class="placeholder-bar"></div>
+                        <div class="placeholder-bar mt-2"></div>
+                        <div class="placeholder-bar mt-2 w-75"></div>
+
+                        <div class="color-selector mt-4 d-flex">
+                          <div
+                            class="color-option bg-success active me-2"
+                          ></div>
+                          <div class="color-option bg-light me-2"></div>
+                          <div class="color-option bg-info me-2"></div>
+                        </div>
+
+                        <div class="action-button mt-4">
+                          <div class="placeholder-button bg-success"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="design-tools">
+                  <div class="design-tool-item bg-white">
+                    <div class="tool-icon text-success">
+                      <i class="far fa-image"></i>
+                    </div>
+                  </div>
+                  <div class="design-tool-item bg-white">
+                    <div class="tool-icon text-success">T</div>
+                  </div>
+                  <div class="design-tool-item bg-white">
+                    <div class="tool-icon text-success">
+                      <i class="fas fa-object-group"></i>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+    <!-- Design Templates Section -->
+    <section class="design-templates-section py-5">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="section-title mb-0">Free design templates</h2>
+          <a href="#" class="view-all-link"
+            >View All <i class="fas fa-arrow-right ms-2"></i
+          ></a>
+        </div>
+
+        <!-- Templates Grid -->
+        <div class="row g-5">
+          <!-- Template Category 1 -->
+          <div class="col-md-3 col-6">
+            <div class="template-category">
+              <div class="template-images">
+                <img src="./images/freetemplete.png" alt="freetemplete" >
+                <!-- <div class="template-grid-2x2">
+                  <div class="grid-item">
+                    <div class="placeholder-img template-img astronaut-1"></div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="placeholder-img template-img astronaut-2"></div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="placeholder-img template-img astronaut-3"></div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="placeholder-img template-img astronaut-4"></div>
+                  </div>
+                </div> -->
+              </div>
+              <div class="template-info mt-3">
+                <h3 class="template-title">Astronauts</h3>
+                <p class="template-count">85 resources</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Template Category 2 -->
+          <div class="col-md-3 col-6">
+            <div class="template-category">
+              <div class="template-images">
+                <img src="./images/freetemplete2.png" alt="freetemplete2">
+                <!-- <div class="template-grid-2x2">
+                  <div class="grid-item">
+                    <div class="placeholder-img template-img quote-1"></div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="placeholder-img template-img quote-2"></div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="placeholder-img template-img quote-3"></div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="placeholder-img template-img quote-4"></div>
+                  </div>
+                </div> -->
+              </div>
+              <div class="template-info mt-3">
+                <h3 class="template-title">Quote that collection</h3>
+                <p class="template-count">6 resources</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Template Category 3 -->
+          <div class="col-md-3 col-6">
+            <div class="template-category">
+              <div class="template-images">
+                <img src="./images/freetemplete3.png" alt="freetemplete3">
+
+                <!-- <div class="template-grid-2x2">
+                  <div class="grid-item">
+                    <div class="placeholder-img template-img art-1"></div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="placeholder-img template-img art-2"></div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="placeholder-img template-img art-3"></div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="placeholder-img template-img art-4"></div>
+                  </div>
+                </div> -->
+              </div>
+              <div class="template-info mt-3">
+                <h3 class="template-title">Art Styles</h3>
+                <p class="template-count">68 resources</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Collections Counter -->
+          <div class="col-md-3 col-6 d-none d-md-block">
+            <div class="template-category collections-counter">
+              <div class="template-images">
+                <img src="./images/freetemplete4.png" alt="freetemplete4">
+
+                <!-- <div class="template-grid-2x2">
+                  <div class="grid-item">
+                    <div
+                      class="placeholder-img template-img collection-1"
+                    ></div>
+                  </div>
+                  <div class="grid-item">
+                    <div
+                      class="placeholder-img template-img collection-2"
+                    ></div>
+                  </div>
+                  <div class="grid-item">
+                    <div
+                      class="placeholder-img template-img collection-3"
+                    ></div>
+                  </div>
+                  <div class="grid-item">
+                    <div
+                      class="placeholder-img template-img collection-4"
+                    ></div>
+                  </div>
+                </div> -->
+                <div class="collections-overlay">
+                  <div class="collections-content text-white text-center">
+                    <h2 class="collections-number">+28</h2>
+                    <p class="collections-text">Collections</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Integration Partners Section -->
+    <section class="integration-section py-5">
+      <div class="container align-items-center justify-content-between">
+        <div class="row align-items-center justify-content-between ">
+          <div class="col-lg-3 col-md-4  mb-md-0">
+            <h2 class="section-title">We integrate with</h2>
+            <div class="mt-3">
+              <a
+                href="#"
+                class="btn btn-outline-secondary rounded-pill btn-sm px-4 more-btn"
+              >
+                And more <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-8">
+            <div class="row integration-logos ">
+              <!-- First row of logos -->
+              <div class="col-lg-3 col-6 col-md-4 text-center ">
+                <div class="integration-logo">
+                  <!-- <i class="fab fa-spotify spotify-icon"></i>
+                  <span class="logo-text spotify-text">Spotify</span> -->
+                  <img src="./images/logo1.png" alt="logo1">
+                </div>
+              </div>
+              <div class="col-lg-3 col-6 col-md-4 text-center ">
+                <div class="integration-logo">
+                  <img src="./images/logo2.png" alt="logo2">
+
+                  <!-- <div class="lattice-icon">
+                    <i class="fas fa-th-large"></i>
+                  </div>
+                  <span class="logo-text">Lattice</span> -->
+                </div>
+              </div>
+              <div class="col-lg-3 col-6 col-md-4 text-center ">
+                <div class="integration-logo">
+                  <img src="./images/logo3.png" alt="logo3">
+
+                  <!-- <div class="upwork-icon">
+                    <i class="fas fa-circle"></i>
+                  </div>
+                  <span class="logo-text upwork-text">upwork</span> -->
+                </div>
+              </div>
+              <div class="col-lg-3 col-6 col-md-4 text-center ">
+                <div class="integration-logo">
+                  <img src="./images/logo4.png" alt="logo4">
+
+                  <!-- <div class="dribbble-icon">
+                    <i class="fab fa-dribbble"></i>
+                  </div>
+                  <span class="logo-text dribbble-text">dribbble</span> -->
+                </div>
+              </div>
+
+              <!-- Second row of logos -->
+              <div class="col-lg-3 col-6 col-md-4 text-center ">
+                <div class="integration-logo">
+                  <!-- <div class="feedly-icon">
+                    <i class="fas fa-rss"></i>
+                  </div>
+                  <span class="logo-text">feedly</span> -->
+                  <img src="./images/logo5.png" alt="logo5">
+
+                </div>
+              </div>
+              <div class="col-lg-3 col-6 col-md-4 text-center ">
+                <div class="integration-logo">
+                  <!-- <div class="hopin-icon">
+                    <i class="fas fa-video"></i>
+                  </div>
+                  <span class="logo-text">hopin</span> -->
+
+                  <img src="./images/logo6.png" alt="logo6">
+
+                </div>
+              </div>
+              <div class="col-lg-3 col-6 col-md-4 text-center ">
+                <div class="integration-logo">
+                  <!-- <div class="amazon-icon">
+                    <i class="fab fa-amazon"></i>
+                  </div>
+                  <span class="logo-text">amazon</span> -->
+
+                  <img src="./images/logo7.png" alt="logo7">
+
+                </div>
+              </div>
+              <div class="col-lg-3 col-6 col-md-4 text-center ">
+                <div class="integration-logo">
+                  <!-- <div class="ebay-icon">
+                    <i class="fab fa-ebay"></i>
+                  </div>
+                  <span class="logo-text">ebay</span> -->
+                  <img src="./images/logo8.png" alt="logo8">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- App Download and Testimonials Section -->
+    <section class="app-testimonials-section py-5">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Download Our App -->
+          <div class="col-md-6">
+            <img src="./images/apps.png" alt="apps" srcset="">
+            <!-- <div class="app-download-card">
+              <div class="card-content p-5">
+                <h2 class="section-title mb-3">Download our app</h2>
+                <p class="text-muted mb-4">Available for iOS and Android</p>
+
+                <div class="app-buttons d-flex flex-wrap">
+                  <a href="#" class="app-btn me-3 mb-2">
+                    <img
+                      src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                      alt="Get it on Google Play"
+                      height="40"
+                    />
+                  </a>
+                  <a href="#" class="app-btn mb-2">
+                    <img
+                      src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg"
+                      alt="Download on the App Store"
+                      height="40"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="app-mockup-container">
+                <div class="app-mockup-phone"></div>
+                <div class="app-mockup-phone app-mockup-phone-back"></div>
+              </div>
+            </div> -->
+          </div>
+
+          <!-- Testimonials -->
+          <div class="col-md-6">
+            <div class="testimonials-card">
+              <div class="p-5">
+                <h2 class="section-title mb-4">Testimonials</h2>
+
+                <div class="testimonial-wrapper">
+                  <div class="testimonial-item active">
+                    <p class="testimonial-text mb-4">
+                      "For all your printing prerequisites. Offer to make and
+                      print their pamphlets, business cards, solicitations, and
+                      occasion programs."
+                    </p>
+                    <div class="testimonial-author d-flex align-items-center">
+                      <div class="testimonial-avatar">
+                        <img
+                          src="./images/avatar.png"
+                          alt="Eddy M."
+                          class="rounded-circle"
+                        />
+                      </div>
+                      <div class="ms-3">
+                        <h5 class="mb-0">Eddy M.</h5>
+                        <p class="text-muted mb-0">Designer at Lift</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="testimonial-controls mt-4">
+                  <button
+                    class="btn btn-sm rounded-circle testimonial-nav-btn prev-btn"
+                  >
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button
+                    class="btn btn-sm rounded-circle testimonial-nav-btn next-btn"
+                  >
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="section-title">Get the latest news, events & more <br> delivered to your inbox.</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-8">
+            <form action="#" method="post" class="newsletter-form">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your email address"
+                  aria-label="Your email address"
+                />
+                <span class="input-group-text">
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="product-showcase " style="margin-top: 100px;">
+          <div class="row g-4">
+            <div class="col-lg col-6">
+              <div class="product-card-simple">
+                <div class="product-image-simple">
+                  <img
+                    src="./images/product1.png"
+                    alt="Purple Hoodie"
+                    class="img-fluid rounded"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-6">
+              <div class="product-card-simple">
+                <div class="product-image-simple">
+                  <img
+                    src="./images/product2.png"
+                    alt="Astronaut Design"
+                    class="img-fluid rounded"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-6">
+              <div class="product-card-simple">
+                <div class="product-image-simple">
+                  <img
+                   src="./images/product3.png"
+                    alt="Green T-Shirt"
+                    class="img-fluid rounded"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-6">
+              <div class="product-card-simple">
+                <div class="product-image-simple product-culture">
+                  <img
+                   src="./images/product4.png"
+                    alt="Green T-Shirt"
+                    class="img-fluid rounded"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-6">
+              <div class="product-card-simple">
+                <div class="product-image-simple">
+                  <img
+                    src="./images/product5.png"
+                    alt="Green Hoodie"
+                    class="img-fluid rounded"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="site-footer pt-5">
+      <div class="container">
+        <div class="footer-main pb-5">
+          <div class="row">
+            <!-- Brand and Social -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h3 class="footer-title">
+                Design your next favorite custom shirt
+              </h3>
+              <div class="footer-social mt-4">
+                <a href="#" class="social-link me-2"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-link me-2"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-link me-2"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Get in touch -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h4 class="footer-heading mb-3">Get in touch</h4>
+              <ul class="footer-contact list-unstyled">
+                <li class="mb-4">
+                  <a href="mailto:hello@teespace.io">hello@teespace.io</a>
+                </li>
+                <li class="mb-4" >
+                  <a href="tel:+02036038996" style="color: black; font-weight: 700;">+02 036 038 3996</a>
+                </li>
+                <li>
+                  3665 Paseo Place, Suite 0960<br />
+                  San Diego
+                </li>
+              </ul>
+            </div>
+
+            <!-- Information -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h4 class="footer-heading mb-3">Information</h4>
+              <ul class="footer-links list-unstyled">
+                <li class="mb-4"><a href="#">About Us</a></li>
+                <li class="mb-4"><a href="#">Our Blog</a></li>
+                <li class="mb-4"><a href="#">Start a Return</a></li>
+                <li class="mb-4"><a href="#">Contact Us</a></li>
+                <li><a href="#">Shipping FAQs</a></li>
+              </ul>
+            </div>
+
+            <!-- Useful Links -->
+            <div class="col-lg-3 col-md-6">
+              <h4 class="footer-heading mb-3">Useful Links</h4>
+              <ul class="footer-links list-unstyled">
+                <li class="mb-4"><a href="#">My Account</a></li>
+                <li class="mb-4"><a href="#">Shipping</a></li>
+                <li class="mb-4"><a href="#">Contact & Support</a></li>
+                <li><a href="#">All Products</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="footer-bottom py-3  d-flex flex-wrap justify-content-between align-items-center"
+        >
+          <div class="copyright">
+            <p class="mb-0">© 2022 TeeSpace</p>
+            <div class="footer-links-sm">
+              <a href="#" class="me-3">Terms & Conditions</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+          <div class="payment-methods">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/349/349221.png"
+                  alt="American Express"
+                  height="20"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/196/196565.png"
+                  alt="Apple Pay"
+                  height="20"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/888/888870.png"
+                  alt="Google Pay"
+                  height="20"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/196/196561.png"
+                  alt="Mastercard"
+                  height="20"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/217/217445.png"
+                  alt="Shop Pay"
+                  height="20"
+                />
+              </li>
+              <li class="list-inline-item">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/196/196578.png"
+                  alt="Visa"
+                  height="20"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
