@@ -1,0 +1,45 @@
+.hover-white:hover{
+    color: white !important;
+}
+.logo{
+    width: 180px;
+}
+.navbar{
+    padding: 25.5px 27px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+/*===========================================footer section===========================================*/
+footer p,
+footer li {
+  color: #7e7e7e;
+}
+footer input {
+  border-radius: 0.75rem;
+  border: 1px solid #f5f5f5;
+
+  background: #f5f5f5;
+}
+footer button {
+  background-color: #2ebb77;
+}
+.bottom-footer{
+    border-top: 1px solid #EDEDED;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: inline-block;
+  }
+
+/*=============================================media queries=============================================*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .logo{
+        width: 130px;
+    }
+    .navbar{
+        padding: 15.5px 10px;
+    }
+}

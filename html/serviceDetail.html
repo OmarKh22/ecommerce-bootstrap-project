@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style/serviceDetail.css">
+    <link rel="stylesheet" href="../Style/navBar&footer.css">
+    <script defer src="../java script/serviceDeatail.js"></script>
+    <title>Service Detail</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white ">
+        <div class="container-fluid">
+            <ul class="navbar-nav mb-2 mb-lg-0 col-lg-4 d-none d-lg-flex">
+                <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        Home
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                      <li><a class="dropdown-item" href="index2.html">Home 2</a></li>
+                      <li><a class="dropdown-item" href="index3.html">Home 3</a></li>
+                      <li><a class="dropdown-item" href="index4.html">Home 4</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        TeeSpace
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="#">TeeSpace 1</a></li>
+                      <li><a class="dropdown-item" href="#">TeeSpace 2</a></li>
+                      <li><a class="dropdown-item" href="#">TeeSpace 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="#">Shop 1</a></li>
+                      <li><a class="dropdown-item" href="#">Shop 2</a></li>
+                      <li><a class="dropdown-item" href="#">Shop 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        Blog
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="#">Blog 1</a></li>
+                      <li><a class="dropdown-item" href="#">Blog 2</a></li>
+                      <li><a class="dropdown-item" href="#">Blog 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="#">page 1</a></li>
+                      <li><a class="dropdown-item" href="#">page 2</a></li>
+                      <li><a class="dropdown-item" href="#">page 3</a></li>
+                    </ul>
+                  </li>
+              </ul>
+          <div class="navbar-brand col-lg-4 text-center me-0">
+            <a  href="index.html" class="logo d-block  ms-lg-auto mx-xl-auto">
+
+              <img class="w-100" src="../assets/icon/logo-black.png.png" alt="logo">
+            </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse col-lg-4" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mb-2 mb-lg-0 col-lg-6 d-flex d-lg-none">
+                <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        Home
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="#">Home 1</a></li>
+                      <li><a class="dropdown-item" href="#">Home 2</a></li>
+                      <li><a class="dropdown-item" href="#">Home 3</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        TeeSpace
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="#">TeeSpace 1</a></li>
+                      <li><a class="dropdown-item" href="#">TeeSpace 2</a></li>
+                      <li><a class="dropdown-item" href="#">TeeSpace 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="#">Shop 1</a></li>
+                      <li><a class="dropdown-item" href="#">Shop 2</a></li>
+                      <li><a class="dropdown-item" href="#">Shop 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        Blog
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="#">Blog 1</a></li>
+                      <li><a class="dropdown-item" href="#">Blog 2</a></li>
+                      <li><a class="dropdown-item" href="#">Blog 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="#">page 1</a></li>
+                      <li><a class="dropdown-item" href="#">page 2</a></li>
+                      <li><a class="dropdown-item" href="#">page 3</a></li>
+                    </ul>
+                  </li>
+            </ul>
+            <div class="d-flex flex-column flex-lg-row col-lg-12 justify-content-end">     
+                <ul class="navbar-nav mb-2 mb-lg-0 flex-row align-items-center me-3">
+                  <li class="nav-item">
+                    <a class="nav-link p-2" href="#"><i class="fas fa-magnifying-glass"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link p-2" href="#"><i class="fa-regular fa-user"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2" href="#"><i class="fa-regular fa-star"></i></a>
+            </li> <li class="nav-item">
+              <a class="nav-link p-2" href="#"><i class="fas fa-bag-shopping"></i></a>
+          </li>
+                    
+                </ul>
+                <button class="btn btn-outline-secondary text-black px-4 hover-white">let's talk</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <section class="header py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="mb-1">Services Detail</h2>
+                    <p class="mb-0">
+                        <a href="#" class="text-decoration-none">Home — </a>
+                        <span class="fw-semibold">Services Detail</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main section  -->
+    <section class=" main py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Side - Single Image -->
+                <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                    <img src="../assets/service detail/main.jpg" class="img-fluid rounded shadow" alt="Main Image">
+                </div>
+
+                <!-- Right Side - Text Content -->
+                <div class=" main-right col-lg-6">
+                    <span class="quality  mb-2">Design your own</span>
+                    <h2 class="mb-3 fw-bold">You’ve got the ideas,<br>we’ve got the tools</h2>
+                    <p class="mb-4 text-muted">T-shirt Printing for Everyone. Get a headstart with free design templates
+                        you can customize in a few clicks.</p>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class=" text-success me-2"></i> <img
+                                src="../assets/service detail/correct.svg" alt="Service" class="img-fluid me-3">High
+                            quality prints using the latest technology</li>
+                        <li class="mb-3"><i class=" text-success me-2"></i><img
+                                src="../assets/service detail/correct.svg" alt="Service" class="img-fluid me-3"> Mix and
+                            match colors, sizes, and designs</li>
+                        <li class="mb-3"><i class=" text-success me-2"></i> <img
+                                src="../assets/service detail/correct.svg" alt="Service" class="img-fluid me-3">Fast and
+                            free standard shipping</li>
+                        <li class="mb-3"><i class=" text-success me-2"></i> <img
+                                src="../assets/service detail/correct.svg" alt="Service" class="img-fluid me-3">Customer
+                            happiness guarantee</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="main-two position-relative p-5 bg-white">
+        <button id="toggle-btn" class="btn btn-secondary position-absolute top-0 end-0 m-3 p-2 rounded">▲</button>
+
+        <div id="features" class="container">
+            <div class="row justify-content-center gy-5">
+
+                <div class="col-12 col-md-4">
+                    <div class="feature-item d-flex align-items-start">
+                        <img src="../assets/service detail/main2-1.svg" alt="Top quality" class="feature-icon me-3">
+                        <div class="main-two-text">
+                            <h5>Top quality</h5>
+                            <p>Lorem ipsum dolor sit, consectetur adipiscing elit duis nec fring!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="feature-item d-flex align-items-start">
+                        <img src="../assets/service detail/main2-2.svg" alt="Mix and match" class="feature-icon me-3">
+                        <div class="main-two-text">
+                            <h5>Mix and match</h5>
+                            <p>Lorem ipsum dolor sit, consectetur adipiscing elit duis nec fring!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="feature-item d-flex align-items-start">
+                        <img src="../assets/service detail/main2-3.svg" alt="Shipping worldwide"
+                            class="feature-icon me-3">
+                        <div class="main-two-text">
+                            <h5>Shipping worldwide</h5>
+                            <p>Lorem ipsum dolor sit, consectetur adipiscing elit duis nec fring!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="main-three py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+
+                <!-- Left Section -->
+                <div class="main-3-left-section col-lg-6">
+                    <div class="quality">Design your own</div>
+                    <h2 class="fw-bold mb-3">T–shirt printing made easy.</h2>
+                    <p class="text-muted mb-4">You’ve got the idea, we’ve got the tools—design your custom clothing with
+                        our free design assets:</p>
+
+                    <div class="info-list row g-4">
+
+                        <div class="col-md-6">
+                            <div class="info-item d-flex align-items-start">
+                                <div class="feature-icon-sec3 text-primary me-3">
+                                    <img src="../assets/service detail/T.svg" alt="t" class="img-fluid">
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Font Library</h6>
+                                    <p class=" small mb-0">Lorem ipsum dolor sit amet consectetur adipiscing
+                                        elit.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="info-item d-flex align-items-start">
+                                <div class="feature-icon-sec3 text-success me-3">
+                                    <img src="../assets/service detail/Squre.svg" alt="Squre" class="img-fluid">
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Quick Designs</h6>
+                                    <p class=" small mb-0">Lorem ipsum dolor sit amet consectetur adipiscing
+                                        elit.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="info-item d-flex align-items-start">
+                                <div class="feature-icon-sec3 text-danger me-3">
+                                    <img src="../assets/service detail/shapes.svg" alt="Shape" class="img-fluid">
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Free Icons, Graphics</h6>
+                                    <p class=" small mb-0">Lorem ipsum dolor sit amet consectetur adipiscing
+                                        elit.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="info-item d-flex align-items-start">
+                                <div class="feature-icon-sec3 text-info me-3">
+                                    <img src="../assets/service detail/galary.svg" alt="image" class="img-fluid">
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Free Images</h6>
+                                    <p class=" small mb-0">Lorem ipsum dolor sit amet consectetur adipiscing
+                                        elit.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Section (Images Grid) -->
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <!-- First column (two stacked images) -->
+                        <div class=" main-3-left-col col-6 d-flex flex-column gap-3">
+                            <img src="../assets/service detail/1.png" alt="T-shirt Mockup" class="grid-img">
+                            <img src="../assets/service detail/2.png" alt="T-shirt Mockup" class="grid-img">
+                        </div>
+
+                        <!-- Second column (two stacked images) -->
+                        <div class=" main-3-right-col col-6 d-flex flex-column gap-3">
+                            <img src="../assets/service detail/3.png" alt="T-shirt Mockup" class="grid-img">
+                            <img src="../assets/service detail/4.png" alt="T-shirt Mockup" class="grid-img">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works py-5">
+        <div class="container text-center">
+
+            <!-- Badge -->
+            <div class="mb-2">
+                <span class="quality">How it work</span>
+            </div>
+
+            <!-- Title -->
+            <h2 class="fw-bold mb-5">T–shirt printing made easy.</h2>
+
+            <!-- Steps -->
+            <div class="steps row justify-content-center align-items-start position-relative">
+
+                <!-- Step 1 -->
+                <div class="col-md-4 mb-5 mb-md-0 position-relative">
+                    <div class="step-item">
+                        <div class="step-circle  text-white mb-3 mx-auto">1</div>
+                        <h5 class="fw-bold mb-2">Add your shirt design</h5>
+                        <p class="text-muted small">Lorem ipsum det, consec tetur adipiscing elit duis nec fringi det,
+                            consec tetur adipiscing eli</p>
+                        <a href="#" class=" fw-bold small text-decoration-none">Explore More ></a>
+                    </div>
+
+                    <!-- SVG line UP -->
+                    <div class="step-connector d-none d-md-block">
+                        <img src="../assets/service detail/clip up.svg" alt="connector" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="col-md-4 mb-5 mb-md-0 position-relative">
+                    <div class="step-item">
+                        <div class="step-circle bg-light text-success border border-success mb-3 mx-auto">2</div>
+                        <h5 class="fw-bold mb-2">Custom artwork & review</h5>
+                        <p class="text-muted small">Lorem ipsum det, consec tetur adipiscing elit duis nec fringi det,
+                            consec tetur adipiscing eli</p>
+                    </div>
+
+                    <!-- SVG line DOWN -->
+                    <div class="step-connector d-none d-md-block pt-5">
+                        <img src="../assets/service detail/eclip down.svg" alt="connector" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="col-md-4 position-relative">
+                    <div class="step-item">
+                        <div class="step-circle bg-light text-success border border-success mb-3 mx-auto">3</div>
+                        <h5 class="fw-bold mb-2">Enjoy your product</h5>
+                        <p class="text-muted small">Lorem ipsum det, consec tetur adipiscing elit duis nec fringi det,
+                            consec tetur adipiscing eli</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- section faq -->
+
+    <section class="faq-section py-5">
+        <div class="container">
+            <div class="row align-items-start">
+
+                <!-- Left side text -->
+                <div class=" left-side col-md-5 mb-4 mb-md-0">
+                    <span class="quality mb-2">Support</span>
+                    <h2 class="fw-bold mb-3">Frequently asked questions</h2>
+                    <p class="text-muted mb-4">You've got the idea, we've got the tools — design your custom clothing
+                        with our free design assets:</p>
+
+                    <div class="flex-column d-flex align-items-start">
+                        <!-- Icon Section -->
+                        <div class="icon-message d-flex flex-row align-items-center me-3">
+                            <div class="rounded-circle d-inline-flex align-items-center justify-content-center">
+                                <img src="../assets/service detail/message.svg" alt="Mail Icon">
+                            </div>
+                            <small class=" mt-2">ANY QUESTIONS</small>
+                        </div>
+
+                        <!-- Email Text -->
+                        <div class="email-text">
+                            <a href="mailto:hello@teespace.com"
+                                class="fw-bold text-dark text-decoration-none">hello@teespace.com</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Right side accordion -->
+                <div class="right-side col-md-7">
+                    <div class="accordion" id="faqAccordion">
+
+                        <!-- Item 1 -->
+                        <div class="accordion-item mb-3 border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button  text-white fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true"
+                                    aria-controls="faq1">
+                                    How does product customization work?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted small">
+                                    To make a T-shirt design, your first need to install specific graphic design
+                                    software. Once you've done that, start your creation (your final design at least 220
+                                    PPI so it won’t be pixelated when printed).<br><br>
+                                    To design your own T-shirt, you can upload your design to the front of your tee and
+                                    add custom elements like text. For some of our T-shirts, reverse side printing is
+                                    also available.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="accordion-item mb-3 border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-light fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false"
+                                    aria-controls="faq2">
+                                    What products can I customize?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted small">
+                                    You can customize a wide range of products like T-shirts, hoodies, mugs, hats, and
+                                    much more.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="accordion-item mb-3 border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-light fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false"
+                                    aria-controls="faq3">
+                                    How are your T-shirts printed?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted small">
+                                    We use high-quality printing techniques such as DTG (Direct to Garment) printing for
+                                    vivid and durable designs.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="accordion-item mb-3 border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-light fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false"
+                                    aria-controls="faq4">
+                                    What is the best T-shirt material?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted small">
+                                    We recommend 100% cotton for maximum comfort and print quality, but we also offer
+                                    blends for flexibility.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="accordion-item mb-3 border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-light fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false"
+                                    aria-controls="faq5">
+                                    Can I order a personalized gift?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted small">
+                                    Absolutely! You can fully personalize products to create unique gifts for any
+                                    occasion.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+   <!-- testimonials -->
+<section class="testimonial-section">
+    <div class="container">
+      <div class="row align-items-start">
+        
+        <!-- Left side text -->
+        <div class="left-side col-lg-4 col-md-5 col-12 mb-4 mb-md-0 text-center text-md-start">
+            <span class="quality mb-2 d-block">Testimonials</span>
+            <h2 class="fw-bold mb-3">What People Are Saying</h2>
+            <p class="text-muted mb-4">We provide support for more than 15K+ Businesses.</p>
+            <button type="button" class="btn btn-success mx-auto mx-md-0 d-block">Shop Now</button>
+        </div>
+        
+  
+        <!-- Right side cards -->
+        <div class="right-side col-lg-8 col-md-7 col-12">
+          <div class="row g-4">
+            
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h5 class="card-title">Print shirts for yourself or your online business</h5>
+                    <p class="card-text">“For all your printing prerequisites. Offer to make and print their pamphlets, business cards, solicitations, & occasion programs.”</p>
+                  </div>
+                  <div class="d-flex align-items-center mt-4">
+                    <img src="../assets/service detail/avatar1.png" alt="Avatar" class="img-fluid rounded-circle" width="60" height="60">
+                    <div class="ms-3">
+                      <h6 class="mb-0">John Doe</h6>
+                      <small class="text-muted">Designer</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h5 class="card-title">Design shirts for yourself or your works</h5>
+                    <p class="card-text">“For all your printing prerequisites. Business cards, solicitations, & occasion programs offer to make and print their pamphlets.”</p>
+                  </div>
+                  <div class="d-flex align-items-center mt-4">
+                    <img src="../assets/service detail/avatar2.png" alt="Avatar" class="img-fluid rounded-circle" width="60" height="60">
+                    <div class="ms-3">
+                      <h6 class="mb-0">Jane Smith</h6>
+                      <small class="text-muted">Marketing Manager</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div> <!-- end row -->
+        </div>
+  
+      </div> <!-- end row -->
+    </div> <!-- end container -->
+  </section>
+  
+  <footer class="mt-5 py-5">
+    <div class="container">
+      <div class="top-footer row justify-content-between">
+        <div class="col-lg-2 col-md-4 col-6 mb-4 px-3 p-lg-0">
+          <div class="footer-logo mb-3">
+            <img src="../assets/icon/logo-black.png.png" class="w-100" alt="">
+          </div>
+          <p>hello@teespace.io</p>
+          <span class="d-block fw-bold fs-5 mb-3">+02 036 038 3996</span>
+          <p>3665 Paseo Place, Suite 0960 San Diego</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 my-2 px-4 p-lg-0">
+          <ul class="list-unstyled">
+            <li class="mb-4 text-black fw-bold fs-5">Information</li>
+            <li class="mb-3"><a href="">About us</a></li>
+            <li class="mb-3"><a href="">Our Blog</a></li>
+            <li class="mb-3"><a href="">Start a Return</a></li>
+            <li class="mb-3"><a href="">Contact Us</a></li>
+            <li class="mb-3"><a href="">Shipping FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 my-2 px-4 p-lg-0">
+          <ul class="list-unstyled">
+            <li class="mb-4 text-black fw-bold fs-5">Services</li>
+            <li class="mb-3"><a href="">Printing Services</a></li>
+            <li class="mb-3"><a href="">Digital Scanning</a></li>
+            <li class="mb-3"><a href="">Design Services</a></li>
+            <li class="mb-3"><a href="">Copying Services</a></li>
+            <li class="mb-3"><a href="">Print on Demand</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 my-2 px-4 p-lg-0">
+          <ul class="list-unstyled">
+            <li class="mb-4 text-black fw-bold fs-5">Useful links</li>
+            <li class="mb-3"><a href="">My Account</a></li>
+            <li class="mb-3"><a href="">Print Provider</a></li>
+            <li class="mb-3"><a href="">Become a Partner</a></li>
+            <li class="mb-3"><a href="">Custom Products</a></li>
+            <li class="mb-3"><a href="">Make your own shirt</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-8 my-2 px-4 p-lg-0">
+          <span class="d-block fw-bold fs-5 mb-3">Newsletter</span>
+          <p>Subscribe to our newsletter.</p>
+          <input class="p-2 mb-3 w-100" type="email" placeholder="Your email address">
+          <button class="text-white py-3 text-center border-0 rounded-3 w-100 ">Subscribe</button>
+        </div>
+      </div>
+      <div class="bottom-footer row justify-content-between align-items-center mt-3 pt-5">
+        <div class="col-lg-4 col-6">
+          <p>© 2022 TeeSpace. All rights reserved.</p>
+        </div>
+        <div class="col-lg-4 col-12 order-1 order-lg-0 mt-3 mt-lg-0">
+          <img src="../assets/icon/footer-payment-method.png.png" class="w-100" alt="">
+        </div>
+        <div class="col-lg-4 col-6">
+          <ul class="list-unstyled d-flex justify-content-end">
+            <li class="ms-3"><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li class="ms-3"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+            <li class="ms-3"><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li class="ms-3"><a href=""><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+    </div>
+  </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
