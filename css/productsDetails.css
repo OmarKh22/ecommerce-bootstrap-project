@@ -1,0 +1,133 @@
+header {
+    background: #f5f5f5;
+  }
+  header p,
+  aside li {
+    color: var(--secondery);
+  }
+
+  select{
+      border: 1px solid #f5f5f5;
+      background: #f5f5f5;
+  }
+
+
+  /* ///////////////////////////////////// */
+  .tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #888;
+}
+.tab.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+.info-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+.column {
+    width: 30%;
+    padding: 10px;
+}
+.column h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+.column p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 10px;
+}
+.column img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.section-title {
+    text-align: center;
+    margin: 40px 0 30px;
+    font-size: 20px;
+}
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.product-card {
+    width: 23%;
+    margin-bottom: 30px;
+    position: relative;
+}
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.sale-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.product-card h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.price {
+    display: flex;
+    align-items: center;
+}
+.price span {
+    margin-right: 10px;
+    font-size: 14px;
+}
+.price .original {
+    text-decoration: line-through;
+    color: #888;
+}
+.price .sale {
+    font-weight: bold;
+}
+.colors {
+    display: flex;
+    margin-top: 10px;
+}
+.color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+}
+.black {
+    background-color: #000;
+}
+.gray {
+    background-color: #888;
+}
+.white {
+    background-color: #fff;
+}
+.blue {
+    background-color: #5ca9dd;
+}
+.more {
+    font-size: 12px;
+    color: #888;
+}

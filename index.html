@@ -1,1080 +1,528 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- //////////////////// my css file //////////////////// -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- //////////////////// bootstrap css file //////////////////// -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- //////////////////// bootstrap js file //////////////////// -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- //////////////////// my js file //////////////////// -->
-    <script src="script.js" defer></script>
-    <!-- //////////////////// font awesome cdn //////////////////// -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navBar&footer.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>teespace</title>
+</head>
 
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- //////////////////////// start with top navbar //////////////////////// -->
-    <div id="announcementBar" class="announcement-bar">
-      <span>🔥Free shipping on all U.S. orders $50+ </span>
-      <a href="#" class="shop-now-link">Shop Now</a>
-      <button id="closeAnnouncement" class="close-btn">&times;</button>
-    </div>
-    <!-- //////////////////////// end with top navbar //////////////////////// -->
-    <!-- //////////////////////// start with navbar //////////////////////// -->
-    <nav class="navbar navbar-expand-lg bg-white border-bottom px-4">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="assets/homeOne/nav-logo.png" alt="Logo" />
-      </a>
+<body class="text-black overflow-x-hidden">
+    
+    <nav class="navbar navbar-expand-lg bg-white ">
+        <div class="container-fluid">
+            <ul class="navbar-nav mb-2 mb-lg-0 col-lg-4 d-none d-lg-flex">
+                <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        Home
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                      <li><a class="dropdown-item" href="index2.html">Home 2</a></li>
+                      <li><a class="dropdown-item" href="index3.html">Home 3</a></li>
+                      <li><a class="dropdown-item" href="index4.html">Home 4</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        TeeSpace
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="#">TeeSpace 1</a></li>
+                      <li><a class="dropdown-item" href="#">TeeSpace 2</a></li>
+                      <li><a class="dropdown-item" href="#">TeeSpace 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="#">Shop 1</a></li>
+                      <li><a class="dropdown-item" href="#">Shop 2</a></li>
+                      <li><a class="dropdown-item" href="#">Shop 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        Blog
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="#">Blog 1</a></li>
+                      <li><a class="dropdown-item" href="#">Blog 2</a></li>
+                      <li><a class="dropdown-item" href="#">Blog 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="#">page 1</a></li>
+                      <li><a class="dropdown-item" href="#">page 2</a></li>
+                      <li><a class="dropdown-item" href="#">page 3</a></li>
+                    </ul>
+                  </li>
+              </ul>
+          <div class="navbar-brand col-lg-4 text-center me-0">
+            <a  href="index.html" class="logo d-block  ms-lg-auto mx-xl-auto">
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link active text-success" href="#">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              data-bs-toggle="dropdown"
-              >TeeSpace</a
-            >
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">About</a></li>
-              <li><a class="dropdown-item" href="#">Team</a></li>
+              <img class="w-100" src="assets/logo-black.png.png" alt="logo">
+            </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse col-lg-4" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mb-2 mb-lg-0 col-lg-6 d-flex d-lg-none">
+                <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        Home
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                      <li><a class="dropdown-item" href="homeIbrahim.html">Home 2</a></li>
+                      <li><a class="dropdown-item" href="home2.html">Home 3</a></li>
+                      <li><a class="dropdown-item" href="home-3.html">Home 4</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        TeeSpace
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="#">TeeSpace 1</a></li>
+                      <li><a class="dropdown-item" href="#">TeeSpace 2</a></li>
+                      <li><a class="dropdown-item" href="#">TeeSpace 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="products.html">Shop</a></li>
+                      <li><a class="dropdown-item" href="#">Shop 2</a></li>
+                      <li><a class="dropdown-item" href="#">Shop 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        Blog
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="blog.html">Blog 1</a></li>
+                      <li><a class="dropdown-item" href="#">Blog 2</a></li>
+                      <li><a class="dropdown-item" href="#">Blog 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="about.html">about</a></li>
+                      <li><a class="dropdown-item" href="pricing.html">pricing</a></li>
+                      <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                      <li><a class="dropdown-item" href="ourTeam.html">our team</a></li>
+                      <li><a class="dropdown-item" href="service.html">service</a></li>
+                      <li><a class="dropdown-item" href="service.html">service</a></li>
+                    </ul>
+                  </li>
             </ul>
+            <div class="d-flex flex-column flex-lg-row col-lg-12 justify-content-end">     
+                <ul class="navbar-nav mb-2 mb-lg-0 flex-row align-items-center me-3">
+                  <li class="nav-item">
+                    <a class="nav-link p-2" href="#"><i class="fas fa-magnifying-glass"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link p-2" href="#"><i class="fa-regular fa-user"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2" href="#"><i class="fa-regular fa-star"></i></a>
+            </li> <li class="nav-item">
+              <a class="nav-link p-2" href="#"><i class="fas fa-bag-shopping"></i></a>
           </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              data-bs-toggle="dropdown"
-              >Shop</a
-            >
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">All Products</a></li>
-              <li><a class="dropdown-item" href="#">New Arrivals</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              data-bs-toggle="dropdown"
-              >Blog</a
-            >
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Articles</a></li>
-              <li><a class="dropdown-item" href="#">News</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              data-bs-toggle="dropdown"
-              >Pages</a
-            >
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">FAQ</a></li>
-              <li><a class="dropdown-item" href="#">Contact</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
-          </li>
-        </ul>
-
-        <div class="d-flex align-items-center gap-3">
-          <!-- Cart -->
-          <div class="position-relative">
-            <div
-              class="bg-light rounded-circle d-flex justify-content-center align-items-center"
-              style="width: 40px; height: 40px"
-            >
-              <i class="fa-solid fa-bag-shopping fs-5"></i>
+                    
+                </ul>
+                <button class="btn btn-outline-secondary text-black px-4 hover-white">let's talk</button>
             </div>
-            <span
-              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success"
-              style="font-size: 12px"
-            >
-              0
-            </span>
           </div>
-
-          <!-- Hotline -->
-          <div class="text-end">
-            <small class="text-muted">HOTLINE:</small><br />
-            <strong>00 1900 8188</strong>
-          </div>
-          <button class="signup-btn">Sign Up</button>
         </div>
-      </div>
-    </nav>
-    <!-- //////////////////////// end with navbar //////////////////////// -->
-    <!-- //////////////////////// start with hero section //////////////////////// -->
-    <section class="hero-section">
-      <div class="container">
+      </nav>
+
+      <section class="hero container">
         <div class="row align-items-center">
-          <!-- Left Content Column -->
-          <div class="col-lg-6 content-col">
-            <div class="create-badge">Create your own</div>
-            <h1 class="hero-title">
-              Make <span class="underline-themost">the most</span><br />
-              of <span class="bold-o">o</span><br />
-              printing
-            </h1>
-            <p class="hero-subtitle">
-              What's more, we do it right! A full administration printing
-              background.<br />
-              Print shirts for yourself or your online business
-            </p>
-
-            <div class="button-group">
-              <a href="#" class="btn-primary">
-                Shop Now <i class="fas fa-arrow-right"></i>
-              </a>
-              <a href="#" class="btn-outline">
-                How We Work <i class="fas fa-play-circle"></i>
-              </a>
+            <div class="col-lg-6">
+              <img class="w-100 rounded-3" src="assets/banner-81.jpg.png" alt="hero">
             </div>
-
-            <div class="stats-container">
-              <div class="stat-item">
-                <h3>4k+</h3>
-                <p>Collections</p>
+            <div class="col-lg-6 hero-content mt-3 mt-lg-0">
+              <div class="stars d-flex align-items-center gap-2 mb-3">
+                <p class="px-3 py-2 rounded-pill fw-bold mb-0">Rated 4.9 of 5.0</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
-              <div class="stats-divider"></div>
-              <div class="stat-item">
-                <h3>9k+</h3>
-                <p>items trusted to deliver</p>
+              <h2 class="fw-bold">Enjoy up your vacations in the best T-shirts</h2>
+              <p>What’s more, we do it right! A full administration printing background.
+                Print shirts for yourself or your online business</p>
+              <ul class="list-unstyled mb-5">
+                <li class="d-flex align-items-center gap-2 mb-2"><i class="fas fa-check rounded-circle p-2"></i> Top quality prints using the latest technology</li>
+                <li class="d-flex align-items-center gap-2 mb-2"><i class="fas fa-check rounded-circle p-2"></i> Mix and match colors, sizes, and designs</li>
+              </ul>
+              <div class="d-flex align-items-center gap-4">
+                <button class="btn btn-success d-flex align-items-center gap-2">Get Started Today <i class="fas fa-arrow-right"></i></button>
+                <button class=" border-0 bg-white  d-flex align-items-center gap-2">How We Work <i class="fas fa-play d-block square-38  rounded-circle border border-black d-flex align-items-center justify-content-center"></i></button>
+              </div>
               </div>
             </div>
+        </div>
+      </section>
+
+      <section class="categorys mt-5 pt-5">
+        <div class="container">
+          <div class="section-header text-center mb-5 ">
+            <h2 class="fw-bold">T-shirt Printing for Everyone</h2>
+            <p>What’s more, we do it right!</p>
           </div>
-
-          <!-- Right Image Column -->
-          <div class="col-lg-6 position-relative">
-            <div class="hero-image-container">
-              <img
-                src="assets/hero/hero.png"
-                alt="Model wearing TeeSpace hoodie"
-                class="img-fluid model-image"
-              />
-            </div>
+          <div id="categorys_container" class="row justify-content-center justify-content-xl-between">
+            <!-- categorys in index.js file -->
           </div>
         </div>
+      </section>
+
+      <section class="collections py-5">
+        <div class="container">
+          <div id ="collections_container" class="row justify-content-center ">
+            <!-- collections in index.js file -->
+          </div>
+        </div>
+      </section>
+      <div class="title-gradient-container text-center overflow-hidden">
+       <h4 class="title-gradient pb-5 position-relative  d-inline-block text-capitalize">High quality offset printing <span class="title-gradient">*</span></h4>
       </div>
-    </section>
-    <!-- //////////////////////// end with hero section //////////////////////// -->
-    <!-- //////////////////////// start with brand logos section //////////////////////// -->
-    <section class="brand-logos">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h3 class="brand-quote">
-            "We've got custom T-shirts in a range of fits and sizes, so everyone
-            can wear your brand or message."
-          </h3>
+
+      <section class="featured-products pb-5 mb-5">
+        <div class="section-header text-center mb-5 pb-4 ">
+          <h2 class="fw-bold">Featured products</h2>
+          <p>What’s more, we do it right!</p>
         </div>
-        <div class="logos-container">
-          <div class="logo-item">
-            <img
-              src="assets/socialMedia/spotify.png"
-              alt="Spotify"
-              class="brand-logo"
-            />
-          </div>
-          <div class="logo-item">
-            <img
-              src="assets/socialMedia/feedly.png"
-              alt="Feedly"
-              class="brand-logo"
-            />
-          </div>
-          <div class="logo-item">
-            <img
-              src="assets/socialMedia/lattice.png"
-              alt="Lattice"
-              class="brand-logo"
-            />
-          </div>
-          <div class="logo-item">
-            <img
-              src="assets/socialMedia/hopin.png"
-              alt="Hopin"
-              class="brand-logo"
-            />
-          </div>
-          <div class="logo-item">
-            <img
-              src="assets/socialMedia/upwork.png"
-              alt="Upwork"
-              class="brand-logo"
-            />
-          </div>
-          <div class="logo-item">
-            <img
-              src="assets/socialMedia/hopin.png"
-              alt="Hopin"
-              class="brand-logo"
-            />
+        <div class="container">
+          <div id="featured_products_container" class="row">
+            <!-- featured products in index.js file -->
           </div>
         </div>
-      </div>
-    </section>
-    <!-- //////////////////////// end with brand logos section //////////////////////// -->
-    <!-- //////////////////////// start with customShirts section //////////////////////// -->
-    <section class="how-to-create">
-      <div class="container">
-        <div class="section-header text-center">
-          <h2 class="section-title">How to create custom shirts</h2>
-          <p class="section-subtitle">
-            Lorem ipsum det, cowec tetur duis necgi det, consec t eturlagix
-            adipiscing eliet, cowec tetopak ec tetur duis necgi
-          </p>
-        </div>
+      </section>
 
-        <div class="steps-container">
-          <!-- Step 1 -->
-          <div class="step-row">
-            <div class="step-image-col">
-              <div class="step-image light-green-bg">
-                <img
-                  src="assets/customShirts/Main.png"
-                  alt="Add your shirt design"
-                  class="img-fluid"
-                />
-              </div>
+      <section class="sale-section mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 sale-content">
+              <span class="text-purple d-inline-block mb-4 fw-bold">special offer</span>
+              <h2 class="fw-bold fs-1 mb-3">Extra Sale 30% off</h2>
+              <p class="fs-5 ">Bucket toy with a contrast colored handle.<br/>Perfect for playing on the beach.</p>
+              <div class="d-flex align-items-center gap-3 fs-1 fw-bold my-4">00 <span class="fs-5 fw-semibold">:</span>00 <span class="fs-5 fw-semibold">:</span>00 <span class="fs-5 fw-semibold">:</span>00</div>
+              <button class="border-0 rounded-3 fw-bold fs-6 text-white py-3 px-4 d-flex align-items-center gap-2">Get Started Today <i class="fas fa-arrow-right"></i></button>
             </div>
-            <div class="step-content-col">
-              <div class="step-number">1</div>
-              <div class="step-content">
-                <h3>Add your shirt design</h3>
-                <p>
-                  Lorem ipsum det, cowec tetur duis nec fringi det, consec t
-                  eturlagix adipiscing eliet, cowec tetopak nec fringi det
-                  adipiscing
-                </p>
+            <div class="col-lg-6 px-md-0 mt-4 mt-lg-0 row position-relative">
+              <div class="col-6 pe-2 pb-5">
+                <img src="assets/sale-1.png" alt="sale1" class="w-100 rounded-3">
               </div>
-            </div>
-          </div>
-
-          <!-- Step 2 -->
-          <div class="step-row reverse">
-            <div class="step-image-col">
-              <div class="step-image light-purple-bg">
-                <img
-                  src="assets/customShirts/Main2.png"
-                  alt="Custom artwork & review"
-                  class="img-fluid"
-                />
+              <div class="col-6 ps-2 pt-5">
+                <img src="assets/sale-2.png" alt="sale2" class="w-100 rounded-3">
               </div>
-            </div>
-            <div class="step-content-col">
-              <div class="step-number">2</div>
-              <div class="step-content">
-                <h3>Custom artwork & review</h3>
-                <p>
-                  Lorem ipsum det, cowec tetur duis nec fringi det, consec t
-                  eturlagix adipiscing eliet, cowec tetopak nec fringi det
-                  adipiscing
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Step 3 -->
-          <div class="step-row">
-            <div class="step-image-col">
-              <div class="step-image light-pink-bg">
-                <img
-                  src="assets/customShirts/Main3.png"
-                  alt="Enjoy your product"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-            <div class="step-content-col">
-              <div class="step-number">3</div>
-              <div class="step-content">
-                <h3>Enjoy your product</h3>
-                <p>
-                  Lorem ipsum det, cowec tetur duis nec fringi det, consec t
-                  eturlagix adipiscing eliet, cowec tetopak nec fringi det
-                  adipiscing
-                </p>
-              </div>
+              <div class="text-white fw-bold position-absolute top-50 start-50 translate-middle bg-purple rounded-circle d-flex align-items-center justify-content-center fs-4 sale-badge">Save<br> 30% </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- //////////////////////// end with customShirts section //////////////////////// -->
-    <!-- //////////////////////// start getStarted section //////////////////////// -->
+      </section>
+      <div class="title-gradient-container text-center d-flex flex-column flex-lg-row gap-lg-5 px-4 w-100 overflow-hidden">
+        <h4 class="title-gradient pb-5 position-relative text-wrap-responsive d-inline-block text-capitalize">Easy to create & customize <span class="title-gradient">*</span></h4>
+        <h4 class="title-gradient pb-5 position-relative text-wrap-responsive ms-lg-5  d-inline-block text-capitalize">Design your own <span class="title-gradient">*</span></h4>
+       </div>
 
-    <section class="ideas-section py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-7">
-            <div class="ideas-gallery">
-              <div class="product-card bg-white p-3">
-                <img
-                  src="assets/getStarted/banner-24.png.png"
-                  class="img-fluid"
-                  alt="معاينة القميص"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <h2 class="display-5 fw-bold mb-4">
-              Free and easy way to bring your ideas to life
-            </h2>
-            <p class="text-muted mb-4">
-              Lorem ipsum det, cowec tetur duis necgi det, consec t eturlagix
-              adipiscing eliet, cowec tetopak
-            </p>
-            <a href="#" class="btn btn-success">Get Started</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- //////////////////////// end getStarted section //////////////////////// -->
-    <!-- //////////////////////// start printing section //////////////////////// -->
-    <section class="printing-section text-center py-5">
-      <div class="container">
-        <h2 class="display-4 fw-bold mb-3">T-shirt printing made easy.</h2>
-        <p class="text-muted">
-          Lorem ipsum det, cowec tetuec tetur duis necgi duis necgi det, consec
-          eturlagix adipiscing eliet, cowec tetopak
-        </p>
-      </div>
-    </section>
-    <!-- //////////////////////// end printing section //////////////////////// -->
+       <section class="banners mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 ">
+              <div class="banner-item-1 px-3 px-4 py-5 rounded-3">
 
-    <!-- //////////////////////// start features section //////////////////////// -->
-    <section class="features-section py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-5">
-            <h2 class="mb-4">Premium quality custom t-shirts</h2>
-
-            <div class="feature-card bg-white p-4 mb-4 shadow-sm rounded">
-              <h3 class="h5 mb-3">Easy to create & customize</h3>
-              <p class="text-muted mb-0">
-                Lorem ipsum det, cowec tetur duis necgi det, consec t eturlagix
-                adipiscing eliet
-              </p>
-            </div>
-
-            <div class="feature-item mb-4">
-              <h3 class="h5">Thousands of free templates</h3>
-            </div>
-
-            <div class="feature-item">
-              <h3 class="h5">Free standard shipping</h3>
-            </div>
-          </div>
-
-          <div class="col-md-7">
-            <div class="laptop-preview position-relative">
-              <img
-                src="assets/printing/banner-25.png.png"
-                alt="Website Preview"
-                class="img-fluid"
-              />
-              <div class="green-circle"></div>
-              <div class="green-circle-small"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- //////////////////////// end features section //////////////////////// -->
-    <!-- //////////////////////// start picks section //////////////////////// -->
-    <section class="picks-section py-5">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="section-title">Our picks for you</h2>
-          <p class="section-subtitle">
-            Lorem ipsum det, cowec tetuec tetur duis necgi duis necgi det,
-            consec eturlagix adipiscing eliet, cowec tetopak
-          </p>
-        </div>
-
-        <div class="products-grid mb-5">
-          <!-- المنتج 1 -->
-          <div class="product-card">
-            <div class="product-image">
-              <span class="badge sale">-21%</span>
-              <span class="badge sold-out">Sold out</span>
-              <img
-                src="assets/picks/shirt1.jpg"
-                alt="Premium Crewneck SweatShirt"
-                class="img-fluid"
-              />
-            </div>
-            <div class="product-info">
-              <h3>Premium Crewneck SweatShirt</h3>
-              <div class="price-group">
-                <span class="current-price">$29.00</span>
-                <span class="original-price">$39.00</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- المنتج 2 -->
-          <div class="product-card">
-            <div class="product-image">
-              <span class="badge sale">Sale</span>
-              <span class="badge new">New</span>
-              <img
-                src="assets/picks/shirt2.jpg"
-                alt="Midweight Cotton Tee"
-                class="img-fluid"
-              />
-            </div>
-            <div class="product-info">
-              <h3>Midweight Cotton Tee</h3>
-              <div class="price-group">
-                <span class="current-price">$26.00</span>
-                <span class="original-price">$29.00</span>
-              </div>
-              <div class="color-dots">
-                <span class="color-dot active"></span>
-                <span class="color-dot"></span>
-                <span class="color-dot"></span>
-              </div>
-            </div>
-          </div>
-
-          <!-- المنتج 3 -->
-          <div class="product-card">
-            <div class="product-image">
-              <span class="badge sale">Sale</span>
-              <span class="badge new">New</span>
-              <img
-                src="assets/picks/shirt3.jpg"
-                alt="Youth Short Sleeve Tee"
-                class="img-fluid"
-              />
-            </div>
-            <div class="product-info">
-              <h3>Youth Short Sleeve Tee</h3>
-              <div class="price-group">
-                <span class="current-price">$26.00</span>
-                <span class="original-price">$29.00</span>
-              </div>
-              <div class="color-dots">
-                <span class="color-dot active"></span>
-                <span class="color-dot"></span>
-                <span class="color-dot"></span>
-              </div>
-            </div>
-          </div>
-
-          <!-- المنتج 4 -->
-          <div class="product-card">
-            <div class="product-image">
-              <span class="badge hot">Hot</span>
-              <img
-                src="assets/picks/shirt4.jpg"
-                alt="Fine Jersey Tee"
-                class="img-fluid"
-              />
-            </div>
-            <div class="product-info">
-              <h3>Fine Jersey Tee</h3>
-              <div class="price-group">
-                <span class="current-price">$31.00</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- بطاقات القوالب -->
-        <div class="row template-cards g-4">
-          <div class="col-md-6">
-            <div class="template-card light-purple">
-              <div class="card-content">
-                <h3>Thousands of<br />free templates</h3>
-                <p>Free and easy way to bring<br />your ideas to life</p>
-                <button class="btn btn-success">Explore More →</button>
-              </div>
-              <div class="template-images">
-                <img
-                  src="assets/picks/div.haru-banner.png"
-                  alt="Template Preview"
-                  class="template-img"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="template-card light-green">
-              <div class="card-content">
-                <h3>Create your<br />unique style</h3>
-                <p>Free and easy way to make<br />your clothes to life</p>
-                <button class="btn btn-success">Shop Now →</button>
-              </div>
-              <div class="template-images">
-                <img
-                  src="assets/picks/div.elementor-element.png"
-                  alt="Style Preview"
-                  class="template-img"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- //////////////////////// start why customize section //////////////////////// -->
-    <section class="why-customize-section py-5">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-lg-4">
-            <h2 class="why-section-title">
-              Why customize products with TeeSpace?
-            </h2>
-            <p class="text-muted mb-4">
-              Lorem ipsum det, cowec tetur duis necgi det, consec t eturlagix
-              adipiscing eliet duis necgi det, con
-            </p>
-            <a href="#" class="btn btn-success">View All Features →</a>
-          </div>
-
-          <div class="col-lg-8">
-            <div class="row g-4">
-              <!-- بطاقة 1 -->
-              <div class="col-md-6 col-lg-4">
-                <div class="why-feature-box">
-                  <div class="why-feature-icon">
-                    <i class="fas fa-dollar-sign text-success"></i>
+                <div class="w-50">
+                  <h5 class="fw-bold fs-2 text-white mb-4 ">10% off your<br> first order</h5>
+                  <p class="fs-5 text-white mb-4">Free and easy way to bring
+                    your ideas to life</p>
+                    <button class="border-0 rounded-2 fw-bold fs-6 bg-white py-2 px-4">Shop Now</button>
                   </div>
-                  <h3>NO Die & plate charges</h3>
-                  <p>
-                    Lorem ipsum det, cowec tetur duis necgi det, consec t
-                    eturlagix adipiscing eliet duis necgi det, con
-                  </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="banner-item-2 px-3  px-4 py-5 rounded-3 mt-4 mt-lg-0">
+                <div class="w-50">
+                  <h5 class="fw-bold fs-2 mb-4 ">Create your<br>
+                    unique styler</h5>
+                  <p class="fs-5 mb-4">Free and easy way to bring
+                    your ideas to life</p>
+                    <button class="border-0 rounded-2 fw-bold fs-6 bg-white py-2 px-4">Explore More</button>
+                  </div>
+                </div>
+            </div>
+            
+          </div>
+        </div>
+       </section>
+
+       <section class="explore-products pb-5 mb-5">
+        <div class="section-header text-center mb-5 pb-4 ">
+          <h2 class="fw-bold">Explore designs picked for you</h2>
+          <p>What’s more, we do it right!</p>
+        </div>
+        <div class="container">
+          <div id="explore_products_container" class="row">
+            <!-- explore products in index.js file -->
+          </div>
+        </div>
+      </section>
+      
+      <section class="carousel-section">
+        <div class="container">
+          <div id="carouselExampleDark" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item rounded-2 fw-bold fs-4 py-5 active">
+                <div class="w-75 mx-auto text-center mt-lg-4">
+                  <div class="image_container position-relative mx-auto mb-4">
+                    <img src="./assets/carousel-avatar.png" class="rounded-circle w-100" alt="avatar">
+                  </div>
+                  <div class="mb-lg-4">
+                    
+                    <p class="mb-4">“For all your printing prerequisites. Offer to make and print
+                      their pamphlets, business cards, solicitations, and occasion
+                      programs. More than ink… Solutions. ””</p>
+                      <p>Marry .<span class="fs-6 fw-medium">Designer at Lift</span></p>
+                    </div>
                 </div>
               </div>
-
-              <!-- بطاقة 2 -->
-              <div class="col-md-6 col-lg-4">
-                <div class="why-feature-box">
-                  <div class="why-feature-icon">
-                    <i class="fas fa-print text-success"></i>
+              <div class="carousel-item rounded-2 fw-bold fs-4 py-5">
+                <div class="w-75 mx-auto text-center mt-lg-4">
+                  <div class="image_container position-relative mx-auto mb-4">
+                    <img src="./assets/carousel-avatar.png" class="rounded-circle w-100" alt="avatar">
                   </div>
-                  <h3>High quality offset printing</h3>
-                  <p>
-                    Lorem ipsum det, cowec tetur duis necgi det, consec t
-                    eturlagix adipiscing eliet duis necgi det, con
-                  </p>
+                  <div class="mb-lg-4">
+                    
+                    <p class="mb-4">“For all your printing prerequisites. Offer to make and print
+                      their pamphlets, business cards, solicitations, and occasion
+                      programs. More than ink… Solutions. ””</p>
+                      <p>Marry .<span class="fs-6 fw-medium">Designer at Lift</span></p>
+                    </div>
                 </div>
               </div>
-
-              <!-- بطاقة 3 -->
-              <div class="col-md-6 col-lg-4">
-                <div class="why-feature-box">
-                  <div class="why-feature-icon">
-                    <i class="fas fa-shield-alt text-success"></i>
+              <div class="carousel-item rounded-2 fw-bold fs-4 py-5">
+                <div class="w-75 mx-auto text-center mt-lg-4">
+                  <div class="image_container position-relative mx-auto mb-4">
+                    <img src="./assets/carousel-avatar.png" class="rounded-circle w-100" alt="avatar">
                   </div>
-                  <h3>Secure payment</h3>
-                  <p>
-                    Lorem ipsum det, cowec tetur duis necgi det, consec t
-                    eturlagix adipiscing eliet duis necgi det, con
-                  </p>
-                </div>
-              </div>
-
-              <!-- بطاقة 4 -->
-              <div class="col-md-6 col-lg-4">
-                <div class="why-feature-box">
-                  <div class="why-feature-icon">
-                    <i class="fas fa-sliders-h text-success"></i>
-                  </div>
-                  <h3>Custom size & style</h3>
-                  <p>
-                    Lorem ipsum det, cowec tetur duis necgi det, consec t
-                    eturlagix adipiscing eliet duis necgi det, con
-                  </p>
-                </div>
-              </div>
-
-              <!-- بطاقة 5 -->
-              <div class="col-md-6 col-lg-4">
-                <div class="why-feature-box">
-                  <div class="why-feature-icon">
-                    <i class="fas fa-truck text-success"></i>
-                  </div>
-                  <h3>Fast & free delivery</h3>
-                  <p>
-                    Lorem ipsum det, cowec tetur duis necgi det, consec t
-                    eturlagix adipiscing eliet duis necgi det, con
-                  </p>
-                </div>
-              </div>
-
-              <!-- بطاقة 6 -->
-              <div class="col-md-6 col-lg-4">
-                <div class="why-feature-box">
-                  <div class="why-feature-icon">
-                    <i class="fas fa-box text-success"></i>
-                  </div>
-                  <h3>Low minimum order quantity</h3>
-                  <p>
-                    Lorem ipsum det, cowec tetur duis necgi det, consec t
-                    eturlagix adipiscing eliet duis necgi det, con
-                  </p>
+                  <div class="mb-lg-4">
+                    
+                    <p class="mb-4">“For all your printing prerequisites. Offer to make and print
+                      their pamphlets, business cards, solicitations, and occasion
+                      programs. More than ink… Solutions. ””</p>
+                      <p>Marry .<span class="fs-6 fw-medium">Designer at Lift</span></p>
+                    </div>
                 </div>
               </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <div class="p-4  shadow-lg text-black rounded-circle position-relative">
+
+                <i class="fas fa-angle-left position-absolute start-50 top-50 translate-middle" aria-hidden="true"></i>
+              </div>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <div class="p-4  shadow-lg text-black rounded-circle position-relative">
+
+                <i class="fas fa-angle-right position-absolute start-50 top-50 translate-middle" aria-hidden="true"></i>
+              </div>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- //////////////////////// end why customize section //////////////////////// -->
-    <section
-      class="why-customize-section py-5"
-      style="background-color: #e5f4ed"
-    >
-      <div class="container">
-        <div class="row g-4"></div>
+      </section>
 
-        <!-- قسم إنشاء المنتجات المخصصة -->
-        <div class="custom-products-banner mt-5">
-          <div class="row g-4 align-items-center bg-mint rounded-4 p-4">
-            <div class="col-lg-8">
-              <h3 class="mb-3">Create your own custom products online!</h3>
-              <p class="mb-4">Free and easy way to bring your ideas to life</p>
-              <button class="btn btn-success">Order Custom Shirts →</button>
+      <section class="services-section py-5 my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-3 text-center mt-5 mt-lg-0">
+              <div class="image_container mx-auto">
+                <img src="./assets/icons/world-Icon.svg" class="w-100" alt="world icon">
+              </div>
+              <h4 class="fw-bold my-3">Worldwide Shipping</h4>
+              <p class="mb-0">Get free shipping over $65.</p>
             </div>
-            <div class="col-lg-4">
-              <div class="custom-product-image">
-                <img
-                  src="assets/picks/Link → banner-28.png.png"
-                  alt="Custom Hoodie"
-                  class="img-fluid"
-                />
+            <div class="col-md-6 col-lg-3 text-center mt-5 mt-lg-0">
+              <div class="image_container mx-auto">
+                <img src="./assets/icons/return-icon.svg" class="w-100" alt="world icon">
+              </div>
+              <h4 class="fw-bold my-3">Returns</h4>
+              <p class="mb-0">Within 30 days for an exchange.</p>
+            </div>
+            <div class="col-md-6 col-lg-3 text-center mt-5 mt-lg-0">
+              <div class="image_container mx-auto">
+                <img src="./assets/icons/phone-icon.svg" class="w-100" alt="world icon">
+              </div>
+              <h4 class="fw-bold my-3">Online Support</h4>
+              <p class="mb-0">Top notch customer service.</p>
+            </div>
+            <div class="col-md-6 col-lg-3 text-center mt-5 mt-lg-0">
+              <div class="image_container mx-auto">
+                <img src="./assets/icons/payment-icon.svg" class="w-100" alt="world icon">
+              </div>
+              <h4 class="fw-bold my-3">Flexible Payment</h4>
+              <p class="mb-0">Pay with Multiple Credit Cards</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="articles-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-3 p-2">
+              <h3 class="fw-bold fs-1 mb-3">Articles daily
+                updated</h3>
+              <p class="mb-4 fs-5">Get inspiration, updates, tips,
+                &other assorted awesomeness.</p>
+              <a class="text-decoration-none" href="#">Read latest articles <i class="fas fa-angle-right ms-2"></i></a>
+            </div>
+            <div class="col-md-6 col-lg-3 p-2 articles-item">
+              <img src="./assets/articles/1.png" class="w-100 rounded-3" alt="article">
+              <div class="d-flex mt-2">
+                <p class=" rounded-pill py-1 px-2"> Design Services</p>
+                <p class="mx-2  py-1 px-2"> August 20, 2022</p>
+              </div>
+              <h5 class="fw-bold fs-5">Make yourself happy with our T-
+                shirt customer designer</h5>
+            </div>
+            <div class="col-md-6 col-lg-3 p-2 articles-item">
+              <img src="./assets/articles/2.png" class="w-100 rounded-3" alt="article">
+              <div class="d-flex mt-2">
+                <p class=" rounded-pill py-1 px-2"> Print Company</p>
+                <p class="mx-2  py-1 px-2"> August 20, 2022</p>
+              </div>
+              <h5 class="fw-bold fs-5">Make yourself happy with our T-
+                shirt customer designer</h5>
+            </div>
+            <div class="col-md-6 col-lg-3 p-2 articles-item">
+              <img src="./assets/articles/3.png" class="w-100 rounded-3" alt="article">
+              <div class="d-flex mt-2">
+                <p class=" rounded-pill py-1 px-2"> Print Company</p>
+                <p class="mx-2  py-1 px-2"> August 20, 2022</p>
+              </div>
+              <h5 class="fw-bold fs-5">Make yourself happy with our T-
+                shirt customer designer</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="enjoy-section my-5 py-5 overflow-hidden">
+        <div class="container position-relative">
+          <div class="row align-items-center position-relative z-3">
+            <div class="col-md-6 px-lg-5">
+              <h2 class="fs-1 fw-semibold text-white mb-4">Enjoy up your vacations the best T-shirts</h2>
+              <p class="fs-5 text-white mb-5 fw-normal">T-shirts that keep you moving.</p>
+              <div class="d-flex align-items-center gap-3">
+                <button class="bg-white border-0 py-2 px-3 rounded-3">Shop Now <i class="d-inline-block ms-2 fas fa-arrow-right-long"></i></button>
+                <button class="bg-white border-0 py-2 px-3 rounded-3">Contact Us <i class="d-inline-block ms-2 fas fa-arrow-right-long"></i></button>
               </div>
             </div>
-          </div>
+            <div class="col-md-6 px-lg-5">
+              <img class="w-100" src="./assets/banner-111.png" alt="">
+            </div>
         </div>
-      </div>
-    </section>
-    <!-- //////////////////////// end picks section //////////////////////// -->
-    <!-- //////////////////////// start resources section //////////////////////// -->
-    <section class="resources-section py-5">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="section-title">More resources</h2>
-          <p class="section-subtitle">
-            Lorem ipsum det, cowec tetuec tetur duis necgi duis necgi det,
-            consec eturlagix adipiscing eliet, cowec tetopak
-          </p>
+        <div class="circles">
+          <div class="circle-1 rounded-circle position-absolute"></div>
+          <div class="circle-2 rounded-circle position-absolute"></div>
+          <div class="circle-3 rounded-circle position-absolute"></div>
         </div>
+      </div> 
+      </section>
 
-        <div class="row g-4">
-          <!-- بطاقة 1 -->
-          <div class="col-md-6">
-            <div class="resource-card bg-white p-4 rounded-3">
-              <div class="d-flex align-items-start">
-                <div class="resource-image me-4">
-                  <img
-                    src="assets/resources/resources1.jpg"
-                    alt="T-shirt design"
-                    class="img-fluid rounded-3"
-                  />
-                </div>
-                <div class="resource-content">
-                  <div class="resource-tag text-success mb-2">
-                    Design Services
-                  </div>
-                  <h3 class="h5 mb-3">
-                    Make yourself happy with our T-shirt customer
-                  </h3>
-                  <div class="resource-meta d-flex align-items-center">
-                    <span class="rounded-circle me-2 fs-5">👨‍💼</span>
-                    <span class="text-muted small">by admin</span>
-                    <span class="text-muted small ms-3">August 20, 2022</span>
-                  </div>
-                </div>
+      <footer class="mt-5 py-5">
+        <div class="container">
+          <div class="top-footer row justify-content-between">
+            <div class="col-lg-2 col-md-4 col-6 mb-4 px-3 p-lg-0">
+              <div class="footer-logo mb-3">
+                <img src="./assets/logo-black.png.png" class="w-100" alt="">
               </div>
+              <p>hello@teespace.io</p>
+              <span class="d-block fw-bold fs-5 mb-3">+02 036 038 3996</span>
+              <p>3665 Paseo Place, Suite 0960 San Diego</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 my-2 px-4 p-lg-0">
+              <ul class="list-unstyled">
+                <li class="mb-4 text-black fw-bold fs-5">Information</li>
+                <li class="mb-3"><a href="">About us</a></li>
+                <li class="mb-3"><a href="">Our Blog</a></li>
+                <li class="mb-3"><a href="">Start a Return</a></li>
+                <li class="mb-3"><a href="">Contact Us</a></li>
+                <li class="mb-3"><a href="">Shipping FAQ</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 my-2 px-4 p-lg-0">
+              <ul class="list-unstyled">
+                <li class="mb-4 text-black fw-bold fs-5">Services</li>
+                <li class="mb-3"><a href="">Printing Services</a></li>
+                <li class="mb-3"><a href="">Digital Scanning</a></li>
+                <li class="mb-3"><a href="">Design Services</a></li>
+                <li class="mb-3"><a href="">Copying Services</a></li>
+                <li class="mb-3"><a href="">Print on Demand</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 my-2 px-4 p-lg-0">
+              <ul class="list-unstyled">
+                <li class="mb-4 text-black fw-bold fs-5">Useful links</li>
+                <li class="mb-3"><a href="">My Account</a></li>
+                <li class="mb-3"><a href="">Print Provider</a></li>
+                <li class="mb-3"><a href="">Become a Partner</a></li>
+                <li class="mb-3"><a href="">Custom Products</a></li>
+                <li class="mb-3"><a href="">Make your own shirt</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-8 my-2 px-4 p-lg-0">
+              <span class="d-block fw-bold fs-5 mb-3">Newsletter</span>
+              <p>Subscribe to our newsletter.</p>
+              <input class="p-2 mb-3 w-100" type="email" placeholder="Your email address">
+              <button class="text-white py-3 text-center border-0 rounded-3 w-100 ">Subscribe</button>
             </div>
           </div>
-
-          <!-- بطاقة 2 -->
-          <div class="col-md-6">
-            <div class="resource-card bg-white p-4 rounded-3">
-              <div class="d-flex align-items-start">
-                <div class="resource-image me-4">
-                  <img
-                    src="assets/resources/resources2.jpg"
-                    alt="Print Shop"
-                    class="img-fluid rounded-3"
-                  />
-                </div>
-                <div class="resource-content">
-                  <div class="d-flex gap-2 mb-2">
-                    <span class="resource-tag text-success">Print Company</span>
-                    <span class="resource-tag text-success">Print Shop</span>
-                  </div>
-                  <h3 class="h5 mb-3">
-                    Are you ready to make it awesome with us
-                  </h3>
-                  <div class="resource-meta d-flex align-items-center">
-                    <span class="rounded-circle me-2 fs-5">👨‍💼</span>
-                    <span class="text-muted small">by admin</span>
-                    <span class="text-muted small ms-3">August 20, 2022</span>
-                  </div>
-                </div>
-              </div>
+          <div class="bottom-footer row justify-content-between align-items-center mt-3 pt-5">
+            <div class="col-lg-4 col-6">
+              <p>© 2022 TeeSpace. All rights reserved.</p>
             </div>
-          </div>
+            <div class="col-lg-4 col-12 order-1 order-lg-0 mt-3 mt-lg-0">
+              <img src="./assets/footer-payment-method.png.png" class="w-100" alt="">
+            </div>
+            <div class="col-lg-4 col-6">
+              <ul class="list-unstyled d-flex justify-content-end">
+                <li class="ms-3"><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li class="ms-3"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li class="ms-3"><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li class="ms-3"><a href=""><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
         </div>
-      </div>
-    </section>
-    <!-- //////////////////////// end resources section //////////////////////// -->
-    <!-- //////////////////////// start testimonials section //////////////////////// -->
-    <section class="testimonials-section py-5">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="section-title">What People Are Saying</h2>
-          <p class="section-subtitle">
-            We provide support for more than 15K+ Businesses.
-          </p>
-        </div>
+      </footer>
 
-        <div class="testimonials-slider">
-          <div class="row g-4">
-            <!-- التقييم 1 -->
-            <div class="col-md-4">
-              <div class="testimonial-card bg-white p-4 rounded-3">
-                <div class="user-info d-flex align-items-center mb-4">
-                  <div class="user-avatar me-3">
-                    <img
-                      src="assets/People/avater-testi-1.png.png"
-                      alt="Dean D."
-                      class="rounded-circle"
-                      width="50"
-                      height="50"
-                    />
-                  </div>
-                  <div>
-                    <h5 class="mb-0">Dean D.</h5>
-                    <small class="text-muted">Director</small>
-                  </div>
-                </div>
-                <p class="testimonial-text">
-                  "Great quality products - Flags, programs for exceptional
-                  capacities, birthday, and occasion welcome are largely still
-                  mainstream on paper."
-                </p>
-              </div>
-            </div>
 
-            <!-- التقييم 2 -->
-            <div class="col-md-4">
-              <div class="testimonial-card bg-white p-4 rounded-3">
-                <div class="user-info d-flex align-items-center mb-4">
-                  <div class="user-avatar me-3">
-                    <img
-                      src="assets/People/avater-testi-2.png.png"
-                      alt="Cristian L."
-                      class="rounded-circle"
-                      width="50"
-                      height="50"
-                    />
-                  </div>
-                  <div>
-                    <h5 class="mb-0">Cristian L.</h5>
-                    <small class="text-muted">Manager</small>
-                  </div>
-                </div>
-                <p class="testimonial-text">
-                  "Best services ever - Flags, programs for exceptional
-                  capacities, birthday, and are largely still mainstream on
-                  paper occasion welcome."
-                </p>
-              </div>
-            </div>
-
-            <!-- التقييم 3 -->
-            <div class="col-md-4">
-              <div class="testimonial-card bg-white p-4 rounded-3">
-                <div class="user-info d-flex align-items-center mb-4">
-                  <div class="user-avatar me-3">
-                    <img
-                      src="assets/People/avater-testi-3.png.png"
-                      alt="Leonel R."
-                      class="rounded-circle"
-                      width="50"
-                      height="50"
-                    />
-                  </div>
-                  <div>
-                    <h5 class="mb-0">Leonel R.</h5>
-                    <small class="text-muted">Designer</small>
-                  </div>
-                </div>
-                <p class="testimonial-text">
-                  "Top notch support - Flags, programs for birthday, and
-                  occasion welcome are largely still mainstream on paper
-                  exceptional capacities."
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- نقاط التنقل -->
-          <div class="testimonial-dots text-center mt-4">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- //////////////////////// end testimonials section //////////////////////// -->
-    <!-- //////////////////////// start vacation section //////////////////////// -->
-    <section class="vacation-section py-5" style="background-color: #f4ebfa">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 text-center text-lg-start">
-            <h2 class="display-4 fw-bold mb-3">
-              Enjoy up your vacations<br />in the best T-shirts
-            </h2>
-            <p class="text-muted mb-4">T-shirts that keep you moving.</p>
-            <div
-              class="d-flex gap-3 justify-content-center justify-content-lg-start"
-            >
-              <a href="#" class="btn btn-success">Shop Now →</a>
-              <a href="#" class="btn btn-outline-dark">Contact Us →</a>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="vacation-gallery position-relative">
-              <div class="image-grid">
-                <img
-                  src="assets/vacations/banner-decor-21.jpg.png"
-                  alt="T-shirt design"
-                  class="floating-image top-left"
-                />
-                <img
-                  src="assets/vacations/banner-decor-22.jpg.png"
-                  alt="T-shirt design"
-                  class="floating-image top-right"
-                />
-                <img
-                  src="assets/vacations/banner-decor-23.jpg.png"
-                  alt="T-shirt design"
-                  class="floating-image bottom-left"
-                />
-                <img
-                  src="assets/vacations/banner-decor-24.jpg.png"
-                  alt="T-shirt design"
-                  class="floating-image bottom-right"
-                />
-                <img
-                  src="assets/vacations/banner-decor-25.jpg.png"
-                  alt="T-shirt design"
-                  class="floating-image center-right"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- //////////////////////// end vacation section //////////////////////// -->
-    <!-- //////////////////////// start social links section //////////////////////// -->
-    <section class="social-links-section py-5">
-      <div class="container">
-        <div
-          class="social-links-container d-flex justify-content-center align-items-center gap-5"
-        >
-          <a href="#" class="social-link">
-            <span class="social-text">Facebook</span>
-          </a>
-          <a href="#" class="social-link">
-            <span class="social-text">Twitter</span>
-          </a>
-          <a href="#" class="social-link">
-            <span class="social-text">Instagram</span>
-          </a>
-          <a href="#" class="social-link">
-            <span class="social-text">Youtube</span>
-          </a>
-          <a href="#" class="social-link">
-            <span class="social-text">Pinterest</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- //////////////////////// end social links section //////////////////////// -->
-    <!-- //////////////////////// start footer section //////////////////////// -->
-    <footer class="footer-section py-5">
-      <div class="container">
-        <div class="row g-4">
-          <!-- TeeSpace Info -->
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-brand mb-4">
-              <img
-                src="assets/homeOne/nav-logo.png"
-                alt="TeeSpace"
-                class="img-fluid"
-                style="width: 180px"
-              />
-            </div>
-            <div class="contact-info">
-              <a
-                href="mailto:hello@teespace.io"
-                class="text-muted d-block mb-2"
-              >
-                <i class="far fa-envelope me-2"></i>hello@teespace.io
-              </a>
-              <a href="tel:+02036038996" class="text-muted d-block mb-2">
-                <i class="fas fa-phone-alt me-2"></i>+02 036 038 996
-              </a>
-              <p class="text-muted mb-0">
-                <i class="fas fa-map-marker-alt me-2"></i>3665 Paseo Place,
-                Suite D960<br />San Diego
-              </p>
-            </div>
-          </div>
-
-          <!-- Information -->
-          <div class="col-lg-3 col-md-6">
-            <h5 class="footer-title">Information</h5>
-            <ul class="footer-links">
-              <li>
-                <a href="#"
-                  ><i class="fas fa-chevron-right me-2"></i>About Us</a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fas fa-chevron-right me-2"></i>Our Blog</a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fas fa-chevron-right me-2"></i>Start a Return</a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fas fa-chevron-right me-2"></i>Contact Us</a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fas fa-chevron-right me-2"></i>Shipping FAQ</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Useful links -->
-          <div class="col-lg-3 col-md-6">
-            <h5 class="footer-title">Useful links</h5>
-            <ul class="footer-links">
-              <li>
-                <a href="#"
-                  ><i class="fas fa-chevron-right me-2"></i>My Account</a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fas fa-chevron-right me-2"></i>Print Provider</a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fas fa-chevron-right me-2"></i>Become a Partner</a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fas fa-chevron-right me-2"></i>Custom Products</a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fas fa-chevron-right me-2"></i>Make your own
-                  shirt</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Newsletter -->
-          <div class="col-lg-3 col-md-6">
-            <h5 class="footer-title">Newsletter</h5>
-            <p class="text-muted mb-4">
-              Get the latest news, events & more delivered to your inbox.
-            </p>
-            <div class="newsletter-form">
-              <div class="input-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Your email address"
-                />
-                <button class="btn btn-success" type="button">
-                  <i class="fas fa-paper-plane"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Payment Methods & Copyright -->
-        <div class="footer-bottom mt-5 pt-4 border-top">
-          <div class="row align-items-center">
-            <div class="col-md-6 text-center text-md-start">
-              <p class="mb-0 text-muted">
-                © 2022 TeeSpace. All rights reserved
-              </p>
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              <div class="payment-methods">
-                <i class="fab fa-cc-amex"></i>
-                <i class="fab fa-apple-pay"></i>
-                <i class="fab fa-google-pay"></i>
-                <i class="fab fa-cc-mastercard"></i>
-                <i class="fab fa-shopify"></i>
-                <i class="fab fa-cc-visa"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- //////////////////////// end footer section //////////////////////// -->
-  </body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script  src="js/index.js" type="module"></script>
+</body>
 </html>
