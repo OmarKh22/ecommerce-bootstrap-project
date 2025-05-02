@@ -1,0 +1,128 @@
+:root {
+    --light-green: #2ebb77;
+    --orange: #f09155;
+    --light-purple: #b479d926;
+    --purple: #b479d9;
+    --secondery: #7e7e7e;
+    --scale-font-size: 1;
+  }
+  .text-secondery2 {
+    color: var(--secondery);
+  }
+  .bg-secondery2 {
+    background-color: var(--secondery);
+  }
+  
+  .container {
+    padding: 0 55px !important;
+  }
+  .text-light-green {
+    color: var(--light-green);
+  }
+  .bg-light-green {
+    background-color: var(--light-green);
+  }
+  .border-dotted {
+    outline: 2px dashed var(--secondery);
+  }
+  
+  
+  
+  body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: inline-block;
+  }
+  .text-wrap-responsive {
+    white-space: nowrap;
+  }
+  .square-38 {
+    width: 38px;
+    height: 38px;
+  }
+  .ratio-square {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  .ratio-4-3 {
+    aspect-ratio: 3/4;
+    object-fit: cover;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .text-offer {
+    color: #9b9b9b;
+    font-size: 0.85rem;
+  }
+  .text-purple {
+    color: var(--purple);
+  }
+  .bg-purple {
+    background-color: var(--purple);
+  }
+  .section-header h2 {
+    font-size: calc(2.5rem * var(--scale-font-size));
+  }
+  .section-header p {
+    color: var(--secondery);
+    font-size: calc(1.25rem * var(--scale-font-size));
+  }
+  .title-gradient {
+    background: linear-gradient(
+      269deg,
+      rgba(180, 121, 217, 0.6) 13.42%,
+      rgba(46, 187, 119, 0.6) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: calc(4.5rem * var(--scale-font-size));
+    letter-spacing: calc(3.6px * var(--scale-font-size));
+  }
+  .title-gradient span {
+    background: linear-gradient(
+      269deg,
+      rgba(180, 121, 217, 0.6) 13.42%,
+      rgba(46, 187, 119, 0.6) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    right: -80px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: calc(5.625rem * var(--scale-font-size));
+  }
+  .colors .color {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  /*===========================================media queries===========================================*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+    :root {
+      --scale-font-size: 0.8;
+    }
+    .container {
+      padding: 0 15px !important;
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    .text-wrap-responsive {
+      white-space: normal !important;
+    }
+  }
+  

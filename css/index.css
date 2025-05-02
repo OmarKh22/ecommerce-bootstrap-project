@@ -1,0 +1,155 @@
+
+/*===========================================hero section===========================================*/
+.hero .stars p {
+  font-size: 18px;
+  color: var(--purple);
+  background: var(--light-purple);
+}
+.hero .stars i {
+  color: #f3bb2e;
+}
+.hero h2 {
+  font-size: calc(3rem * var(--scale-font-size));
+}
+.hero .hero-content > p {
+  color: var(--secondery);
+  font-size: calc(1.125rem * var(--scale-font-size));
+}
+.hero .hero-content ul i {
+  display: block;
+  background-color: #e2f5f2;
+  color: #11b196;
+}
+
+/*===========================================categorys section===========================================*/
+
+.categorys span {
+  color: var(--secondery);
+}
+
+/*===========================================sales section===========================================*/
+.sale-section {
+  padding: 115.19px 0px;
+  background-color: #f8f8f8;
+}
+.sale-section .sale-content span {
+  font-size: 0.875rem;
+}
+.sale-section .sale-content p {
+  color: var(--secondery);
+}
+.sale-section .sale-content button {
+  background-color: var(--light-green);
+}
+.sale-section .sale-badge {
+  width: 20%;
+  aspect-ratio: 1/1;
+}
+
+/*===========================================banner section===========================================*/
+.banner-item-1 {
+  background-image: url("../assets/banner-1.png");
+  background-position: center right;
+  background-size: cover;
+}
+.banner-item-2 {
+  background-image: url("../assets/banner-2.png");
+  background-position: center right;
+  background-size: cover;
+}
+.banner-item-2 p {
+  color: var(--secondery);
+}
+/*===========================================carousel section===========================================*/
+.carousel-section .image_container {
+  width: 92px !important;
+}
+.carousel-section .image_container::after {
+  content: ",,";
+  left: 100%;
+  bottom: 80%;
+  position: absolute;
+  font-size: 5rem;
+  color: #0000001a;
+}
+.carousel-section .carousel-item {
+  background-color: #f8f8f8;
+}
+.carousel-section .carousel-item span {
+  color: #9b9b9b;
+}
+
+/*===========================================services section===========================================*/
+.services-section p {
+  color: var(--secondery);
+}
+.services-section h4 {
+  font-size: 1.125rem;
+}
+.services-section .image_container {
+  width: 48px;
+}
+
+/*===========================================articles section===========================================*/
+.articles-section p {
+  color: var(--secondery);
+}
+.articles-section a {
+  color: var(--light-green);
+  font-size: 1.125rem;
+}
+.articles-item p {
+  color: var(--secondery);
+  font-size: 0.9375rem;
+
+  /* padding: 5px 10px;
+  width: calc(50%); */
+}
+.articles-item div p:first-child {
+  background: #f5f5f5;
+}
+/*=======================================enjoy section=================================================*/
+.enjoy-section {
+  background: #64cb9a;
+}
+.circle-1 {
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  opacity: 0.2;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.4) 23.86%,
+    #fff 93.86%
+  );
+  left: 0;
+  top: 50%;
+  transform: translate(-70%, -50%);
+}
+.circle-2 {
+  width: 15rem;
+  aspect-ratio: 1 / 1;
+  opacity: 0.2;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.4) 23.86%,
+    #fff 93.86%
+  );
+  left: 50%;
+  top: 50%;
+  transform: translate(-80%, -100%);
+}
+.circle-3 {
+  width: 35%;
+  aspect-ratio: 1 / 1;
+  opacity: 0.2;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.4) 23.86%,
+    #fff 93.86%
+  );
+  right: 10%;
+  bottom: 0;
+  transform: translate(0%, 70%);
+}
+
+
